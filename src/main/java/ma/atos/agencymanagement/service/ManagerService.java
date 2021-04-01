@@ -37,7 +37,7 @@ public class ManagerService {
     existingManager.setLastName(manager.getLastName());
     existingManager.setRegistrationNumber(manager.getRegistrationNumber());
     existingManager.setIntegrationDate(manager.getIntegrationDate());
-    existingManager.setModificationDate();
+    existingManager.setModificationDate(new Date());
     return  managerRepository.save(existingManager);
     }
 
