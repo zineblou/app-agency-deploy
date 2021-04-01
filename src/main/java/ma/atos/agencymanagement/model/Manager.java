@@ -6,10 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.Date;
 @Data
 @AllArgsConstructor
@@ -24,4 +21,6 @@ public class Manager extends Modification {
     private String firstName;
     private String lastName;
     private Date integrationDate;
+    @ManyToOne
+    private Manager manager;
 }
