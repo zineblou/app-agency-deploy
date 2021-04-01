@@ -1,0 +1,12 @@
+Index: src/main/resources/application.properties
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>windows-1252
+===================================================================
+diff --git a/src/main/resources/application.properties b/src/main/resources/application.properties
+--- a/src/main/resources/application.properties	(revision 2341aa77b1355da226e9c9aaefd593dd936ed343)
++++ b/src/main/resources/application.properties	(date 1617266987813)
+@@ -1,1 +1,0 @@
+-
