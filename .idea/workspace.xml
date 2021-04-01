@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f540f5f7-6dc4-4a60-a941-69330051884d" name="Default Changelist" comment="FEAT-[DEV]-database connexion configuration and creation of Manager and Modification classes." />
+    <list default="true" id="f540f5f7-6dc4-4a60-a941-69330051884d" name="Default Changelist" comment="FEAT-[DEV]-ADD CLASS HABILITATION">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_01_04_2021_10_49__FEAT-_DEV_-database_connexion_confi.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_01_04_2021_10_49__FEAT-_DEV_-database_connexion_confi.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <list id="e5d06627-3d59-4fb8-82ab-c6eb8a05d80c" name="FEAT-[DEV]-database connexion configuration" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,19 +60,6 @@
     <property name="settings.editor.selected.configurable" value="project.propCompiler" />
   </component>
   <component name="RunManager" selected="Spring Boot.AgencymanagementApplication">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ma.atos.agencymanagement in ma.atos.agencymanagement" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ma.atos.agencymanagement" />
       <extension name="coverage">
@@ -163,6 +154,7 @@
       <workItem from="1617282860023" duration="437000" />
       <workItem from="1617283320774" duration="2471000" />
       <workItem from="1617285825435" duration="587000" />
+      <workItem from="1617300651458" duration="416000" />
     </task>
     <task id="LOCAL-00001" summary="FEAT-[DEV]-database connexion configuration">
       <created>1617266683442</created>
