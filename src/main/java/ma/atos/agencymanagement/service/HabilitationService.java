@@ -42,7 +42,7 @@ public class HabilitationService {
         return repository.findByCode(code);
 
     }
-  public String deleteHabilitation(long id)
+  public String deleteHabilitation(Long id)
     {
         repository.deleteById(id);
         return "habilitation removed !!  "+id;

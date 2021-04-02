@@ -18,7 +18,7 @@ import java.util.Optional;
 
 public class Habilitation {
     @Id
-    private long id;
+    private Long id;
     private String code;
     //le libelé
     private String name;

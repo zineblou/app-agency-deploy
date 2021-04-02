@@ -7,7 +7,10 @@ import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -23,4 +26,9 @@ public class Manager extends Modification {
     private Date integrationDate;
     @ManyToOne
     private Manager manager;
+    @ManyToMany(cascade = {CascadeType.ALL})
+    private List<Role> roles = new ArrayList<>();
+
+
+
 }

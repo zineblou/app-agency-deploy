@@ -7,6 +7,8 @@ import lombok.ToString;
 import org.hibernate.annotations.Generated;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Data @NoArgsConstructor @AllArgsConstructor @ToString
@@ -16,6 +18,9 @@ public class Role {
     private Long id;
     private String name;
     private String code;
+    @ManyToMany(cascade = {CascadeType.ALL})
+
+    private List<Manager> managers = new ArrayList<>();
 
 
 }

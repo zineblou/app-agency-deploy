@@ -9,10 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-// Add /api to every route
-
-// Accept Cross origin calls
-@AllArgsConstructor
+@RequestMapping("habilitaion")
 class HabilitationController {
     @Autowired
     private HabilitationService service;
@@ -42,13 +39,13 @@ class HabilitationController {
         return service. getHabilitationByCode(code);
     }
 
-    @PutMapping("/update")
+    @PutMapping("/updateHabilitaion")
     public Habilitation updateHabilitation(@RequestBody Habilitation habilitation) {
         return service.updateHabilitation(habilitation);
     }
 
-    @DeleteMapping("/delete/{id}")
-    public String deleteHabilitation(@PathVariable int id) {
+    @DeleteMapping("/deleteHabilitation/{id}")
+    public String deleteHabilitation(@PathVariable Long id) {
         return service.deleteHabilitation(id);
     }
 }

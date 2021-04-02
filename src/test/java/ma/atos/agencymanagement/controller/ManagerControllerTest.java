@@ -11,7 +11,7 @@ class ManagerControllerTest {
     private ManagerController managerController;
     @Test
     void addManager() {
-        managerController.addManager()
+
     }
 
     @Test
