@@ -5,7 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f540f5f7-6dc4-4a60-a941-69330051884d" name="Default Changelist" comment="FEAT-[DEV]-ADD CLASS HABILITATION">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_2_4_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ma/atos/agencymanagement/controller/HabilitationControlerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ma/atos/agencymanagement/controller/HabilitationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ma.atos.agencymanagement.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ma.atos.agencymanagement.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ma/atos/agencymanagement/controller/HabilitationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/atos/agencymanagement/controller/HabilitationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ma/atos/agencymanagement/model/Habilitation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/atos/agencymanagement/model/Habilitation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ma/atos/agencymanagement/repository/HabilitationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/atos/agencymanagement/repository/HabilitationRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ma/atos/agencymanagement/AgencymanagementApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ma/atos/agencymanagement/AgencymanagementApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ma/atos/agencymanagement/controller/AgencyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ma/atos/agencymanagement/controller/AgencyController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ma/atos/agencymanagement/controller/HabilitationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ma/atos/agencymanagement/controller/HabilitationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ma/atos/agencymanagement/model/Agency.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ma/atos/agencymanagement/model/Agency.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ma/atos/agencymanagement/model/Habilitation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ma/atos/agencymanagement/model/Habilitation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ma/atos/agencymanagement/repository/AgencyRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ma/atos/agencymanagement/repository/AgencyRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ma/atos/agencymanagement/repository/HabilitationRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ma/atos/agencymanagement/repository/HabilitationRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ma/atos/agencymanagement/service/AgencyService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ma/atos/agencymanagement/service/AgencyService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ma/atos/agencymanagement/service/HabilitationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ma/atos/agencymanagement/service/HabilitationService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ma/atos/agencymanagement/AgencymanagementApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ma/atos/agencymanagement/AgencymanagementApplicationTests.class" afterDir="false" />
     </list>
     <list id="e5d06627-3d59-4fb8-82ab-c6eb8a05d80c" name="FEAT-[DEV]-database connexion configuration" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,9 +76,51 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
   </component>
-  <component name="RunManager" selected="Spring Boot.AgencymanagementApplication">
+  <component name="RunManager" selected="JUnit.HabilitationTests.addHabilitation">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HabilitationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ma.atos.agencymanagement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ma.atos.agencymanagement.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ma.atos.agencymanagement.controller" />
+      <option name="MAIN_CLASS_NAME" value="ma.atos.agencymanagement.controller.HabilitationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HabilitationTests.addHabilitation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ma.atos.agencymanagement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ma.atos.agencymanagement.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ma.atos.agencymanagement.controller" />
+      <option name="MAIN_CLASS_NAME" value="ma.atos.agencymanagement.controller.HabilitationTests" />
+      <option name="METHOD_NAME" value="addHabilitation" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ma.atos.agencymanagement in ma.atos.agencymanagement" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ma.atos.agencymanagement" />
       <extension name="coverage">
@@ -128,6 +191,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HabilitationTests.addHabilitation" />
+        <item itemvalue="JUnit.HabilitationTests" />
         <item itemvalue="JUnit.ma.atos.agencymanagement in ma.atos.agencymanagement" />
       </list>
     </recent_temporary>
