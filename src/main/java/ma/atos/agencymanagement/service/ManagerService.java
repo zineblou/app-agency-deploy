@@ -1,7 +1,9 @@
 package ma.atos.agencymanagement.service;
 
 import ma.atos.agencymanagement.model.Manager;
+import ma.atos.agencymanagement.model.Role;
 import ma.atos.agencymanagement.repository.ManagerRepository;
+import ma.atos.agencymanagement.repository.RoleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,6 +15,9 @@ public class ManagerService {
 
     @Autowired
     private ManagerRepository managerRepository;
+
+    @Autowired
+    private RoleRepository roleRepository;
 
     public Manager saveManager(Manager manager){
         return managerRepository.save(manager);
@@ -41,8 +46,10 @@ public class ManagerService {
     return  managerRepository.save(existingManager);
     }
 
-//    public void assigneRole
-    public void add(){
-
+    public Manager assignRole(Long roleId, Long managerId){
+       Manager manager = managerRepository.findById(managerId).get();
+       Role role = roleRepository.findById(roleId).get();
+       manager.getRoles().add(role);
+       return managerRepository.save(manager);
     }
 }

@@ -33,16 +33,17 @@ public class RoleController {
         return roleService.saveRole(role);
     }
 
-    @PutMapping(value = "/listroles/{id}")
-    public Role update(@PathVariable(name = "id") Long id, @RequestBody Role role) {
-        role.setId(id);
-        return roleService.saveRole(role);
-    }
+
 
     @DeleteMapping(value = "/deleteRole/{id}")
     public void deleteRole(@PathVariable Long id) {
         roleService.deletRole(id);
     }
+    @PutMapping("/assignHabilition")
+    public Role assignHabilitation(@RequestParam("roleId") Long roleId, @RequestParam("habilitationId") Long habilitationId){
+        return roleService.assignHabilitation(roleId,habilitationId);
+    }
+
 }
 
 
