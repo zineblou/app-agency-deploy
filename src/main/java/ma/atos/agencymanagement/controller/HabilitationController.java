@@ -32,11 +32,7 @@ class HabilitationController {
     @GetMapping("/HabilitationById/{id}")
     public Habilitation findHabilitationById(@PathVariable long id) {
         return service.getHabilitationById(id);
-    }
 
-    @GetMapping("/habilitation/{code}")
-    public Habilitation findHabilitationByName(@PathVariable String code) {
-        return service. getHabilitationByCode(code);
     }
 
     @PutMapping("/updateHabilitaion")
@@ -45,8 +41,8 @@ class HabilitationController {
     }
 
     @DeleteMapping("/deleteHabilitation/{id}")
-    public String deleteHabilitation(@PathVariable Long id) {
-        return service.deleteHabilitation(id);
+    public void deleteHabilitation(@PathVariable Long id) {
+         service.deleteHabilitation(id);
     }
 }
 

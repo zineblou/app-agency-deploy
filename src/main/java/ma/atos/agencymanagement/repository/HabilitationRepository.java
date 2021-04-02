@@ -1,13 +1,12 @@
 package ma.atos.agencymanagement.repository;
 
-import jdk.nashorn.internal.objects.NativeArray;
 import ma.atos.agencymanagement.model.Habilitation;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-import java.util.Optional;
-
+@Repository
 public interface  HabilitationRepository extends JpaRepository<Habilitation, Long> {
 
 
-    Habilitation findByCode(String code);
+
 }
