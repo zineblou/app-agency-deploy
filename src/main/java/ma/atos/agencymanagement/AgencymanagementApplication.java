@@ -1,8 +1,10 @@
 package ma.atos.agencymanagement;
 
+import ma.atos.agencymanagement.model.Agency;
 import ma.atos.agencymanagement.model.Habilitation;
 import ma.atos.agencymanagement.model.Manager;
 import ma.atos.agencymanagement.model.Role;
+import ma.atos.agencymanagement.repository.AgencyRepository;
 import ma.atos.agencymanagement.repository.HabilitationRepository;
 import ma.atos.agencymanagement.repository.ManagerRepository;
 import ma.atos.agencymanagement.repository.RoleRepository;
@@ -24,8 +26,12 @@ public class AgencymanagementApplication implements CommandLineRunner {
 
 	@Autowired
 	private RoleRepository roleRepository;
+
 	@Autowired
 	private ManagerService roleService;
+
+	@Autowired
+	private AgencyRepository agencyRepository;
 
 	public static void main(String[] args) {
 
@@ -46,6 +52,8 @@ public class AgencymanagementApplication implements CommandLineRunner {
 		Role role = it.next();
 		roleService.assignRole(role.getId(),manager.getId());
 	}
+	Agency agency = new Agency();
+	agencyRepository.save(agency);
 
 	}
 }

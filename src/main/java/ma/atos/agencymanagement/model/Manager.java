@@ -24,10 +24,13 @@ public class Manager extends Modification {
     private String firstName;
     private String lastName;
     private Date integrationDate;
-
     @ManyToMany(fetch = FetchType.EAGER)
     private List<Role> roles = new ArrayList<Role>();
+    @ManyToOne
+    private Manager manager;
 
+    @ManyToOne
+    private Agency agency;
 
     public Manager(    String registrationNumber, String firstName, String lastName, Date integrationDate) {
         this.registrationNumber = registrationNumber;
