@@ -42,11 +42,15 @@ public class AgencyService {
         agencyRepository.deleteById(id);
     }
 
-    public void disableAgency(Long id){
+    public Agency disableAgency(Long id){
+        Agency agency= agencyRepository.findById(id).get();
+        agency.setDisable(true);
+        return agencyRepository.save(agency);
 
     }
 
     public void mergeAgencies(){
 
     }
+
 }
