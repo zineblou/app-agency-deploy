@@ -22,5 +22,9 @@ public class Role {
 
     private List<Manager> managers = new ArrayList<>();
 
+    public Role( String name,String code){
+        this.name = name;
+        this.code = code;
+    }
 
 }

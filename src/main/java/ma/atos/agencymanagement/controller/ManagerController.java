@@ -1,7 +1,9 @@
 package ma.atos.agencymanagement.controller;
 
 import ma.atos.agencymanagement.model.Manager;
+import ma.atos.agencymanagement.model.Role;
 import ma.atos.agencymanagement.service.ManagerService;
+import ma.atos.agencymanagement.service.RoleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -38,4 +40,10 @@ public class ManagerController {
     public Manager updateManager(@RequestBody Manager manager){
         return managerService.updateManager(manager);
     }
+
+    @PutMapping("/assignRole")
+    public Manager assignRole(@RequestParam("idRole") Long roleId, @RequestParam("idManager") Long idManager){
+       return managerService.assignRole(roleId,idManager);
+    }
+
 }
