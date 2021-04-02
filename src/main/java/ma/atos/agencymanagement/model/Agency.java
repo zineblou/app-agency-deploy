@@ -20,4 +20,5 @@ public class Agency {
     private String bankCode;
     private String swiftCode;
     private Date date;
+    private boolean disable=false;
 }

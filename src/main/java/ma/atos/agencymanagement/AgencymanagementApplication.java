@@ -44,6 +44,7 @@ public class AgencymanagementApplication implements CommandLineRunner {
 		managerRepository.save(new Manager("i","name"+i,"prenom"+i, new Date()));
 		roleRepository.save(new Role("role"+i,"code"+i));
 
+
 	}
 	Manager manager = managerRepository.findById(1L).get();
 	List<Role> roles = roleRepository.findAll().subList(0,4);
