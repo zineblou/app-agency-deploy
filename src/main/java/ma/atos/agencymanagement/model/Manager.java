@@ -28,7 +28,6 @@ public class Manager extends Modification {
     private List<Role> roles = new ArrayList<Role>();
     @ManyToOne
     private Manager manager;
-
     @ManyToOne
     private Agency agency;
 
