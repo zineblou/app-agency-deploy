@@ -17,6 +17,7 @@ import java.util.List;
 @ToString
 @Entity
 public class Manager extends Modification {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

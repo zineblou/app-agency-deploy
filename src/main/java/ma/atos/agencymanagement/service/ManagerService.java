@@ -49,6 +49,7 @@ public class ManagerService {
     existingManager.setIntegrationDate(manager.getIntegrationDate());
     existingManager.setModificationDate(new Date());
     return  managerRepository.save(existingManager);
+
     }
 
     public Manager assignRole(Long roleId, Long idManager){

@@ -53,4 +53,5 @@ public class ManagerController {
     public Manager assignAgency(@RequestParam("idManager") Long idManager, @RequestParam("idAgency") Long idAgency){
         return managerService.assignAgency(idManager,idAgency);
     }
+
 }
