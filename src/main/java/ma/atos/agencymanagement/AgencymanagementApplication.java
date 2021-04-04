@@ -13,6 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
 
 import java.util.Date;
 import java.util.Iterator;
@@ -33,9 +34,20 @@ public class AgencymanagementApplication implements CommandLineRunner {
 	@Autowired
 	private AgencyRepository agencyRepository;
 
+	@Autowired
+	private HabilitationRepository habilitationRepository;
+
 	public static void main(String[] args) {
 
-		SpringApplication.run(AgencymanagementApplication.class, args);
+		ApplicationContext context =SpringApplication.run(AgencymanagementApplication.class, args);
+	    HabilitationRepository habilitationRepository = context.getBean(HabilitationRepository.class);
+	    habilitationRepository.save(new Habilitation(null,"manager","manager.com",new Date(),new Date()));
+	    habilitationRepository.save(new Habilitation(null,"manager1","manager1.com",new Date(),new Date()));
+	    habilitationRepository.save(new Habilitation(null,"manager2","manager2.com",new Date(),new Date()));
+
+
+
+
 	}
 
 	@Override
@@ -43,6 +55,7 @@ public class AgencymanagementApplication implements CommandLineRunner {
  	for(int i = 0; i <10; i++){
 		managerRepository.save(new Manager("i","name"+i,"prenom"+i, new Date()));
 		roleRepository.save(new Role("role"+i,"code"+i));
+
 
 
 	}
