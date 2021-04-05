@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8413d19-68c5-4caf-80c2-d2c9b991a962" name="Default Changelist" comment="FEAT-[DEV]-add comments">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ma/atos/agencymanagement/HabilitationControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ma/atos/agencymanagement/controller/AgencyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/atos/agencymanagement/controller/AgencyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ma/atos/agencymanagement/controller/HabilitationControlerTest.java" beforeDir="false" />
-    </list>
+    <list default="true" id="f8413d19-68c5-4caf-80c2-d2c9b991a962" name="Default Changelist" comment="FEAT-[DEV]-add comments" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -257,7 +252,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617618079321</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="FEAT-[DEV]-add comments">
+      <created>1617619264396</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1617619264396</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
