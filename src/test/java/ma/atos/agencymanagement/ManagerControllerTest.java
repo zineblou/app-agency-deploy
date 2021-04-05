@@ -125,6 +125,7 @@ public class ManagerControllerTest extends AbstractTest {
     }
 
 
+
     @Test
     public void assignAgency() throws  Exception{
         Agency agency = agencyRepository.findAll().get(agencyRepository.findAll().size()-1);
