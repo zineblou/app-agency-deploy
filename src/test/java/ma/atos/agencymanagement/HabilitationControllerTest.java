@@ -1,7 +1,7 @@
 package ma.atos.agencymanagement;
 
 import ma.atos.agencymanagement.model.Habilitation;
-import ma.atos.agencymanagement.model.Manager;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.http.MediaType;

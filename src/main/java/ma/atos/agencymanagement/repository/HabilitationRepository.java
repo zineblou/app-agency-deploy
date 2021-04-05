@@ -8,8 +8,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface  HabilitationRepository extends JpaRepository<Habilitation, Long> {
 
-    @Autowired
-    public Habilitation findHabilitationById(Long id);
+
 
 
 }

@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8413d19-68c5-4caf-80c2-d2c9b991a962" name="Default Changelist" comment="FEAT-[DEV]-add comments" />
+    <list default="true" id="f8413d19-68c5-4caf-80c2-d2c9b991a962" name="Default Changelist" comment="FEAT-[DEV]-add comments">
+      <change afterPath="$PROJECT_DIR$/src/test/java/ma/atos/agencymanagement/controller/HabilitationControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ma/atos/agencymanagement/controller/HabilitationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/atos/agencymanagement/controller/HabilitationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ma/atos/agencymanagement/model/MergedAgency.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ma/atos/agencymanagement/repository/HabilitationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/atos/agencymanagement/repository/HabilitationRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ma/atos/agencymanagement/service/HabilitationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/atos/agencymanagement/service/HabilitationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ma/atos/agencymanagement/HabilitationControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ma/atos/agencymanagement/HabilitationControllerTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +23,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -48,6 +57,8 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
@@ -58,8 +69,14 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="ma.atos.agencymanagement.controller" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="ma.atos.agencymanagement.controller" />
+    </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.AgencymanagementApplication">
+  <component name="RunManager" selected="JUnit.HabilitationControllerTest.getHabiliattionsList">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -69,6 +86,52 @@
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HabilitationControllerTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ma.atos.agencymanagement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ma.atos.agencymanagement.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ma.atos.agencymanagement" />
+      <option name="MAIN_CLASS_NAME" value="ma.atos.agencymanagement.HabilitationControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HabilitationControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ma.atos.agencymanagement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ma.atos.agencymanagement.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ma.atos.agencymanagement.controller" />
+      <option name="MAIN_CLASS_NAME" value="ma.atos.agencymanagement.controller.HabilitationControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HabilitationControllerTest.getHabiliattionsList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ma.atos.agencymanagement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ma.atos.agencymanagement.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ma.atos.agencymanagement" />
+      <option name="MAIN_CLASS_NAME" value="ma.atos.agencymanagement.HabilitationControllerTest" />
+      <option name="METHOD_NAME" value="getHabiliattionsList" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -88,23 +151,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HabilitationTests.addHabilitation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ma.atos.agencymanagement" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ma.atos.agencymanagement.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ma.atos.agencymanagement.controller" />
-      <option name="MAIN_CLASS_NAME" value="ma.atos.agencymanagement.controller.HabilitationTests" />
-      <option name="METHOD_NAME" value="addHabilitation" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ma.atos.agencymanagement in ma.atos.agencymanagement" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ManagerControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ma.atos.agencymanagement" />
       <extension name="coverage">
         <pattern>
@@ -113,7 +160,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ma.atos.agencymanagement" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="MAIN_CLASS_NAME" value="ma.atos.agencymanagement.ManagerControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -174,9 +222,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.HabilitationTests.addHabilitation" />
+        <item itemvalue="JUnit.HabilitationControllerTest.getHabiliattionsList" />
+        <item itemvalue="JUnit.ManagerControllerTest" />
+        <item itemvalue="JUnit.HabilitationControllerTest (1)" />
+        <item itemvalue="JUnit.HabilitationControllerTest" />
         <item itemvalue="JUnit.HabilitationTests" />
-        <item itemvalue="JUnit.ma.atos.agencymanagement in ma.atos.agencymanagement" />
       </list>
     </recent_temporary>
   </component>
@@ -259,7 +309,21 @@
       <option name="project" value="LOCAL" />
       <updated>1617619264396</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="FEAT-[DEV]-add comments">
+      <created>1617619559652</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1617619559652</updated>
+    </task>
+    <task id="LOCAL-00010" summary="FEAT-[DEV]-add comments">
+      <created>1617619815447</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1617619815447</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,6 +347,17 @@
     <MESSAGE value="FEAT-[DEV]-ADD CLASS HABILITATION" />
     <MESSAGE value="FEAT-[DEV]-add comments" />
     <option name="LAST_COMMIT_MESSAGE" value="FEAT-[DEV]-add comments" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ma/atos/agencymanagement/HabilitationControllerTest.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ma_atos_agencymanagement$AgencymanagementApplication.ic" NAME="AgencymanagementApplication Coverage Results" MODIFIED="1617269923812" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
