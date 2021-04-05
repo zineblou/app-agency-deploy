@@ -10,8 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("habilitaion")
-
+@RequestMapping("habilitation")
 class HabilitationController {
     @Autowired
     private HabilitationService habilitationService;
@@ -22,6 +21,11 @@ class HabilitationController {
         return habilitationService.saveHabilitation(habilitation);
     }
 
+    @GetMapping("/habilitations")
+    public List<Habilitation> getHabilitations() {
+        return habilitationService.getHabilitations();
+    }
+
     // add habilitation method
     @PostMapping("/addHabilitations")
     public List<Habilitation> addHabilitation(@RequestBody List<Habilitation> habilitations) {
@@ -29,11 +33,7 @@ class HabilitationController {
     }
 
 
-    // Get  a list of all  habilitations
-    @GetMapping("/habilitations")
-    public List<Habilitation> getHabilitations() {
-        return habilitationService.getHabilitations();
-    }
+
 
     // Get a single habilitation by id
     @GetMapping("/HabilitationById/{id}")

@@ -1,23 +1,21 @@
 package ma.atos.agencymanagement.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.Generated;
-import lombok.NoArgsConstructor;
+import lombok.*;
+import org.springframework.stereotype.Component;
 
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import java.util.Optional;
 
-@Entity
+
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
+@ToString
+@Entity
 
-
-public class Habilitation {
+public class Habilitation  extends Modification {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -27,8 +25,18 @@ public class Habilitation {
     private Date startDate;
     private Date endDate;
 
+
+
     @ManyToMany(cascade = {CascadeType.ALL})
     private List<Role> roles = new ArrayList<>();
+
+    public Habilitation( String code,String name, Date startDate, Date endDate) {
+        this.code = code;
+        this.name = name;
+        this.startDate = startDate;
+        this.endDate = endDate;
+    }
+
 
 
 
