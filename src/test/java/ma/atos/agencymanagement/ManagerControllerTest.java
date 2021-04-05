@@ -111,7 +111,8 @@ public class ManagerControllerTest extends AbstractTest {
         assertEquals(200,status);
     }
 
-    
+
+
     @Test
     public void assignRole() throws  Exception{
         Role role = roleRepository.findAll().get(roleRepository.findAll().size()-1);
