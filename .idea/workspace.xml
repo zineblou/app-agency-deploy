@@ -4,8 +4,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f540f5f7-6dc4-4a60-a941-69330051884d" name="Default Changelist" comment="FEAT-[DEV]-ADD CLASS HABILITATION" />
-    <list id="e5d06627-3d59-4fb8-82ab-c6eb8a05d80c" name="FEAT-[DEV]-database connexion configuration" comment="" />
+    <list default="true" id="f8413d19-68c5-4caf-80c2-d2c9b991a962" name="Default Changelist" comment="FEAT-[DEV]-add comments on habilitation controller">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_inline_2_15_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_vintage_junit_vintage_engine_5_7_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_3_6_28.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_2_15_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_3_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ma/atos/agencymanagement/repository/MergedAgencyRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ma/atos/agencymanagement/service/AgencyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/atos/agencymanagement/service/AgencyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ma/atos/agencymanagement/AbstractTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ma/atos/agencymanagement/AbstractTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ma/atos/agencymanagement/controller/HabilitationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ma/atos/agencymanagement/controller/HabilitationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ma/atos/agencymanagement/AgencymanagementApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ma/atos/agencymanagement/controller/HabilitationController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ma/atos/agencymanagement/controller/ManagerController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ma/atos/agencymanagement/controller/RoleController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ma/atos/agencymanagement/exception/AgencyNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ma/atos/agencymanagement/exception/AgencyNotFoundResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ma/atos/agencymanagement/model/Habilitation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ma/atos/agencymanagement/model/Manager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ma/atos/agencymanagement/model/Modification.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ma/atos/agencymanagement/model/Role.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ma/atos/agencymanagement/repository/HabilitationRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ma/atos/agencymanagement/repository/ManagerRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ma/atos/agencymanagement/repository/RoleRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ma/atos/agencymanagement/service/HabilitationService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ma/atos/agencymanagement/service/ManagerService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ma/atos/agencymanagement/service/RoleService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ma/atos/agencymanagement/AgencymanagementApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ma/atos/agencymanagement/controller/HabilitationControlerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ma/atos/agencymanagement/controller/HabilitationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ma/atos/agencymanagement/controller/ManagerControllerTest.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
