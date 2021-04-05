@@ -76,9 +76,9 @@ public class AgencyService {
         for (Agency a : agencies)
         {
 
-            //mName +=  a.getName()+"-";
-            mName = mName + a.getName()+"-";
-            cSwift = cSwift+ a.getSwiftCode()+"-";
+
+            mName +=  a.getName()+"-";
+            cSwift +=  a.getSwiftCode()+"-";
 
             this.disableAgency(a.getPlaceCode());
         }
