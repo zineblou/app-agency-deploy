@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("habilitaion")
+@RequestMapping("habilitation")
 class HabilitationController {
     @Autowired
     private HabilitationService service;
