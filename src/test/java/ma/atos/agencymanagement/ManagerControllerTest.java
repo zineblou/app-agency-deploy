@@ -11,17 +11,16 @@ import ma.atos.agencymanagement.repository.ManagerRepository;
 import ma.atos.agencymanagement.repository.RoleRepository;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.platform.commons.logging.Logger;
+import org.junit.platform.commons.logging.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
  import org.springframework.test.web.servlet.MvcResult;
  import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.util.LinkedMultiValueMap;
-import org.springframework.util.MultiValueMap;
-import org.springframework.util.MultiValueMapAdapter;
-
 import java.util.Date;
-import java.util.HashMap;
+import java.util.function.Supplier;
+
 
 public class ManagerControllerTest extends AbstractTest {
 
@@ -44,11 +43,9 @@ public class ManagerControllerTest extends AbstractTest {
                 .accept(MediaType.APPLICATION_JSON_VALUE)).andReturn();
 
         int status = mvcResult.getResponse().getStatus();
-        System.out.println("status "+status);
         assertEquals(200, status);
         String content = mvcResult.getResponse().getContentAsString();
         Manager[] managerlist = super.mapFromJson(content, Manager[].class);
-        System.out.println("Manager size"+managerlist.length);
         assertTrue(managerlist.length >= 0);
     }
     @Test
@@ -71,7 +68,11 @@ public class ManagerControllerTest extends AbstractTest {
     public void updateManager() throws Exception {
         String uri = "/manager/update";
         Manager manager = managerRepository.findAll().get(0);
-        System.out.println("geted manager name:"+manager.getFirstName());
+        Logger logger = LoggerFactory.getLogger(ManagerControllerTest.class);
+
+        Supplier<String> stringSupplier = () -> new String("manager name:\"+manager.getFirstName()");
+        logger.info(stringSupplier);
+
         manager.setFirstName("newName");
         String inputJson = super.mapToJson(manager);
         MvcResult mvcResult = mvc.perform(MockMvcRequestBuilders.put(uri)

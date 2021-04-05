@@ -21,4 +21,6 @@ public class Agency {
     private String swiftCode;
     private Date date;
     private boolean disable=false;
+
+
 }

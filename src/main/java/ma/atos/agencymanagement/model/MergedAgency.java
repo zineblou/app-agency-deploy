@@ -5,12 +5,13 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.Entity;
+import java.util.ArrayList;
 import java.util.List;
-@Entity
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class MergedAgency extends Agency{
-    private List<Agency> mergedAgencies;
+    private List<Agency> mergedAgencies = new ArrayList<>();
 
 }
