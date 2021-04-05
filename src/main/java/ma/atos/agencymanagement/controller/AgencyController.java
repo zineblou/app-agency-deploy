@@ -18,7 +18,6 @@ public class AgencyController {
         return agencyService.getAllAgencies();
     }
 
-
     @GetMapping("/agencies/{pId}")
     public Agency getAgency(@PathVariable("pId") Long id){
         return agencyService.getAgency(id).orElseThrow(()-> new AgencyNotFoundException(id));

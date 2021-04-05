@@ -2,7 +2,6 @@ package ma.atos.agencymanagement.service;
 
 
 import ma.atos.agencymanagement.model.Agency;
-
 import ma.atos.agencymanagement.repository.AgencyRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -50,7 +49,6 @@ public class AgencyService {
         return agencyRepository.save(agency);
 
     }
-
 
 
 }
