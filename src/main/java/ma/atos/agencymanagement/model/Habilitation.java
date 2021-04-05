@@ -24,7 +24,7 @@ public class Habilitation  extends Modification {
     private String name;
     private Date startDate;
     private Date endDate;
-
+    
 
     public Habilitation( String code,String name, Date startDate, Date endDate) {
         this.code = code;

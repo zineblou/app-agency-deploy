@@ -70,16 +70,14 @@
       <recent name="ma.atos.agencymanagement.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.HabilitationControllerTest.updateHabilitation">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.HabilitationControllerTest.deleteHabilitation">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -219,8 +217,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.HabilitationControllerTest.updateHabilitation" />
         <item itemvalue="JUnit.HabilitationControllerTest.deleteHabilitation" />
+        <item itemvalue="JUnit.HabilitationControllerTest.updateHabilitation" />
         <item itemvalue="JUnit.HabilitationControllerTest.getHabiliattionsList" />
         <item itemvalue="JUnit.HabilitationControllerTest.createHabilitation" />
         <item itemvalue="JUnit.HabilitationControllerTest (1)" />
