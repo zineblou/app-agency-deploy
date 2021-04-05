@@ -25,15 +25,12 @@ public class AgencymanagementApplication implements CommandLineRunner {
 
 	@Autowired
     private ManagerRepository managerRepository;
-//
-//	@Autowired
-//	private RoleRepository roleRepository;
-//
-//	@Autowired
-//	private ManagerService roleService;
-//
-//	@Autowired
-//	private AgencyRepository agencyRepository;
+
+	@Autowired
+	private RoleRepository roleRepository;
+	@Autowired
+	private AgencyRepository agencyRepository;
+
 
 	public static void main(String[] args) {
 
@@ -44,17 +41,8 @@ public class AgencymanagementApplication implements CommandLineRunner {
 	public void run(String... args) throws Exception {
  	for(int i = 0; i <10; i++){
 		managerRepository.save(new Manager("i","name"+i,"prenom"+i, new Date()));
-
+		roleRepository.save(new Role("name"+i,"code"+i));
+		agencyRepository.save(new Agency(1L,"name"+i, "bankCode"+i, "swiftCode"+i, new Date(), false));
 	}
-//	Manager manager = managerRepository.findById(1L).get();
-//	List<Role> roles = roleRepository.findAll().subList(0,4);
-//	Iterator<Role> it = roles.iterator();
-//	while(it.hasNext()){
-//		Role role = it.next();
-//		roleService.assignRole(role.getId(),manager.getId());
-//	}
-//	Agency agency = new Agency();
-//	agencyRepository.save(agency);
-//
-//	}
+
 }}
