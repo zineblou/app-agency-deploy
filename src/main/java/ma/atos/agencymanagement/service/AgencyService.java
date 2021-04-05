@@ -2,9 +2,8 @@ package ma.atos.agencymanagement.service;
 
 
 import ma.atos.agencymanagement.model.Agency;
-import ma.atos.agencymanagement.model.MergedAgency;
+
 import ma.atos.agencymanagement.repository.AgencyRepository;
-import ma.atos.agencymanagement.repository.MergedAgencyRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -19,8 +18,6 @@ public class AgencyService {
     @Autowired
     private AgencyRepository agencyRepository;
 
-    @Autowired
-    private MergedAgencyRepository mergedAgencyRepository;
 
     public List<Agency> getAllAgencies(){
         List<Agency> agencies = new ArrayList<>();
@@ -54,48 +51,6 @@ public class AgencyService {
 
     }
 
-    public MergedAgency mergeAgencies(List<Long> agenciesID){
-        // creation de lobjet agence fusionnée
-        MergedAgency mergAg = new MergedAgency();
 
-        List<Agency> agencies = new ArrayList<Agency>();
-
-        for (Long aID: agenciesID
-             ) {
-
-            Agency a = this.getAgency(aID).get();
-            agencies.add(a);
-        }
-
-        //affectation de la liste des agences à fusionner
-        mergAg.setMergedAgencies(agencies);
-
-        String mName = "";
-        String cSwift = "";
-
-        for (Agency a : agencies)
-        {
-
-            //mName +=  a.getName()+"-";
-            mName = mName + a.getName()+"-";
-            cSwift = cSwift+ a.getSwiftCode()+"-";
-
-            this.disableAgency(a.getPlaceCode());
-        }
-
-        mergAg.setName(mName);
-        mergAg.setSwiftCode(cSwift);
-        mergAg.setBankCode(agencies.get(0).getBankCode());
-
-        mergedAgencyRepository.save(mergAg);
-
-
-
-
-
-
-
-        return mergAg;
-    }
 
 }
