@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: ma.atos.agencymanagement.controller.RoleControllerTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.644 s <<< FAILURE! - in ma.atos.agencymanagement.controller.RoleControllerTest
+getRoles  Time elapsed: 0.021 s  <<< ERROR!
+java.lang.NullPointerException
+	at ma.atos.agencymanagement.controller.RoleControllerTest.getRoles(RoleControllerTest.java:40)
+
