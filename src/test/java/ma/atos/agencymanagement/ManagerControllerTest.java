@@ -124,6 +124,7 @@ public class ManagerControllerTest extends AbstractTest {
         assertEquals(200,status);
     }
 
+
     @Test
     public void assignAgency() throws  Exception{
         Agency agency = agencyRepository.findAll().get(agencyRepository.findAll().size()-1);
