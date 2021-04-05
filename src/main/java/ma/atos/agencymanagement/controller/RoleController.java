@@ -8,19 +8,23 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("role")
 public class RoleController {
     @Autowired
     private RoleService roleService;
 
-    @PostMapping(value = "/add")
+    @GetMapping(value = "/listroles")
+    public List<Role> getRoles() {
+        return roleService.getRoles();
+    }
+
+    @PostMapping(value = "/addrole")
     public Role addRole(Role role) {
         return roleService.saveRole(role);
     }
 
-    @GetMapping(value = "/listroles")
-    public List<Role> getRoles() {
-        return roleService.getRoles();
+    @PutMapping(value = "/update")
+    public Role updateRole(@RequestBody Role role) {
+        return roleService.saveRole(role);
     }
 
     @GetMapping(value = "/role/{id}")
@@ -28,10 +32,7 @@ public class RoleController {
         return roleService.getById(id);
     }
 
-    @PutMapping(value = "/update")
-    public Role updateRole(@RequestBody Role role) {
-        return roleService.saveRole(role);
-    }
+
 
 
 

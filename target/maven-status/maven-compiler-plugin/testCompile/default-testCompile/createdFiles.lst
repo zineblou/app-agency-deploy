@@ -1,0 +1,6 @@
+ma\atos\agencymanagement\AbstractTest.class
+ma\atos\agencymanagement\AgencymanagementApplicationTests.class
+ma\atos\agencymanagement\controller\RoleControllerTest.class
+ma\atos\agencymanagement\HabilitationControllerTest.class
+ma\atos\agencymanagement\controller\HabilitationTests.class
+ma\atos\agencymanagement\ManagerControllerTest.class

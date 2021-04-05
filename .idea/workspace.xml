@@ -4,7 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8413d19-68c5-4caf-80c2-d2c9b991a962" name="Default Changelist" comment="FEAT-[DEV]-add comments" />
+    <list default="true" id="f540f5f7-6dc4-4a60-a941-69330051884d" name="Default Changelist" comment="FEAT-[FEAT]- Testing method that gets list of managers.">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_persistence_javax_persistence_api_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_1_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ma/atos/agencymanagement/controller/RoleControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_01_04_2021_10_49__FEAT-_DEV_-database_connexion_confi.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_01_04_2021_10_49__FEAT-_DEV_-database_connexion_confi.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ma.atos.agencymanagement.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ma.atos.agencymanagement.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ma/atos/agencymanagement/AgencymanagementApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/atos/agencymanagement/AgencymanagementApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ma/atos/agencymanagement/controller/RoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/atos/agencymanagement/controller/RoleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ma/atos/agencymanagement/model/Habilitation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/atos/agencymanagement/model/Habilitation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ma/atos/agencymanagement/model/MergedAgency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/atos/agencymanagement/model/MergedAgency.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ma/atos/agencymanagement/model/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/atos/agencymanagement/model/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ma/atos/agencymanagement/AbstractTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ma/atos/agencymanagement/AbstractTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+    </list>
+    <list id="e5d06627-3d59-4fb8-82ab-c6eb8a05d80c" name="FEAT-[DEV]-database connexion configuration" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +38,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -48,63 +73,57 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="ma.atos.agencymanagement" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
       <recent name="ma.atos.agencymanagement.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.AgencymanagementApplication">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.RoleControllerTest">
+    <configuration name="AgencymanagementApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ma.atos.agencymanagement.AgencymanagementApplication" />
+      <module name="ma.atos.agencymanagement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ma.atos.agencymanagement.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HabilitationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ma.atos.agencymanagement" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ma.atos.agencymanagement.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ma.atos.agencymanagement.controller" />
-      <option name="MAIN_CLASS_NAME" value="ma.atos.agencymanagement.controller.HabilitationTests" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HabilitationTests.addHabilitation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ma.atos.agencymanagement" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ma.atos.agencymanagement.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ma.atos.agencymanagement.controller" />
-      <option name="MAIN_CLASS_NAME" value="ma.atos.agencymanagement.controller.HabilitationTests" />
-      <option name="METHOD_NAME" value="addHabilitation" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ma.atos.agencymanagement in ma.atos.agencymanagement" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ManagerControllerTest.getManagersList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ma.atos.agencymanagement" />
       <extension name="coverage">
         <pattern>
@@ -113,7 +132,56 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ma.atos.agencymanagement" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="MAIN_CLASS_NAME" value="ma.atos.agencymanagement.ManagerControllerTest" />
+      <option name="METHOD_NAME" value="getManagersList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RoleControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ma.atos.agencymanagement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ma.atos.agencymanagement.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ma.atos.agencymanagement.controller" />
+      <option name="MAIN_CLASS_NAME" value="ma.atos.agencymanagement.controller.RoleControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RoleControllerTest.assignHabilitation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ma.atos.agencymanagement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ma.atos.agencymanagement.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ma.atos.agencymanagement.controller" />
+      <option name="MAIN_CLASS_NAME" value="ma.atos.agencymanagement.controller.RoleControllerTest" />
+      <option name="METHOD_NAME" value="assignHabilitation" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RoleControllerTest.updateRole" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ma.atos.agencymanagement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ma.atos.agencymanagement.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ma.atos.agencymanagement.controller" />
+      <option name="MAIN_CLASS_NAME" value="ma.atos.agencymanagement.controller.RoleControllerTest" />
+      <option name="METHOD_NAME" value="updateRole" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -174,9 +242,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.HabilitationTests.addHabilitation" />
-        <item itemvalue="JUnit.HabilitationTests" />
-        <item itemvalue="JUnit.ma.atos.agencymanagement in ma.atos.agencymanagement" />
+        <item itemvalue="JUnit.RoleControllerTest" />
+        <item itemvalue="JUnit.RoleControllerTest.assignHabilitation" />
+        <item itemvalue="Application.AgencymanagementApplication" />
+        <item itemvalue="JUnit.ManagerControllerTest.getManagersList" />
+        <item itemvalue="JUnit.RoleControllerTest.updateRole" />
       </list>
     </recent_temporary>
   </component>
@@ -199,9 +269,16 @@
       <workItem from="1617281630331" duration="1201000" />
       <workItem from="1617282860023" duration="437000" />
       <workItem from="1617283320774" duration="2471000" />
-      <workItem from="1617285825435" duration="587000" />
-      <workItem from="1617300651458" duration="416000" />
-      <workItem from="1617613674967" duration="312000" />
+      <workItem from="1617285825435" duration="836000" />
+      <workItem from="1617286690797" duration="6316000" />
+      <workItem from="1617345807558" duration="7439000" />
+      <workItem from="1617353344958" duration="5739000" />
+      <workItem from="1617361014187" duration="3250000" />
+      <workItem from="1617367704062" duration="1722000" />
+      <workItem from="1617369472684" duration="975000" />
+      <workItem from="1617370479806" duration="6509000" />
+      <workItem from="1617606218472" duration="678000" />
+      <workItem from="1617629907523" duration="13639000" />
     </task>
     <task id="LOCAL-00001" summary="FEAT-[DEV]-database connexion configuration">
       <created>1617266683442</created>
@@ -231,35 +308,77 @@
       <option name="project" value="LOCAL" />
       <updated>1617286210551</updated>
     </task>
-    <task id="LOCAL-00005" summary="FEAT-[DEV]-ADD CLASS HABILITATION">
-      <created>1617382024694</created>
+    <task id="LOCAL-00005" summary="FEAT-[DEV]-database connexion configuration and creation of Manager and Modification classes.">
+      <created>1617286453297</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1617382024694</updated>
+      <updated>1617286453297</updated>
     </task>
-    <task id="LOCAL-00006" summary="FEAT-[DEV]-ADD CLASS HABILITATION">
-      <created>1617613926367</created>
+    <task id="LOCAL-00006" summary="FEAT-[DEV]-database connexion configuration and creation of Manager and Modification classes.">
+      <created>1617294141648</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1617613926367</updated>
+      <updated>1617294141648</updated>
     </task>
-    <task id="LOCAL-00007" summary="FEAT-[DEV]-add comments">
-      <created>1617618079321</created>
+    <task id="LOCAL-00007" summary="FEAT-[DEV]-modification on the manager service.">
+      <created>1617295315167</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1617618079321</updated>
+      <updated>1617295315167</updated>
     </task>
-    <task id="LOCAL-00008" summary="FEAT-[DEV]-add comments">
-      <created>1617619264396</created>
+    <task id="LOCAL-00008" summary="FEAT-[FIX]- correction of some errors.">
+      <created>1617348755611</created>
       <option name="number" value="00008" />
       <option name="presentableId" value="LOCAL-00008" />
       <option name="project" value="LOCAL" />
-      <updated>1617619264396</updated>
+      <updated>1617348755611</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="FEAT-[FEAT]- assign role to manager.">
+      <created>1617353782804</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1617353782804</updated>
+    </task>
+    <task id="LOCAL-00010" summary="FEAT-[FEAT]- assign role to manager.">
+      <created>1617354028705</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1617354028705</updated>
+    </task>
+    <task id="LOCAL-00011" summary="FEAT-[FEAT]- assign agency and to manager to a manager.">
+      <created>1617358228082</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1617358228082</updated>
+    </task>
+    <task id="LOCAL-00012" summary="FEAT-[FEAT]- assign agency and to manager to a manager.">
+      <created>1617376427669</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1617376427669</updated>
+    </task>
+    <task id="LOCAL-00013" summary="FEAT-[FEAT]- assign agency and to manager to a manager.">
+      <created>1617376621174</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1617376621174</updated>
+    </task>
+    <task id="LOCAL-00014" summary="FEAT-[FEAT]- Testing method that gets list of managers.">
+      <created>1617378482372</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1617378482372</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,11 +399,40 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="FEAT-[DEV]-database connexion configuration" />
     <MESSAGE value="FEAT-[DEV]-database connexion configuration and creation of Manager and Modification classes." />
-    <MESSAGE value="FEAT-[DEV]-ADD CLASS HABILITATION" />
-    <MESSAGE value="FEAT-[DEV]-add comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="FEAT-[DEV]-add comments" />
+    <MESSAGE value="FEAT-[DEV]-modification on the manager service." />
+    <MESSAGE value="FEAT-[FIX]- correction of some errors." />
+    <MESSAGE value="FEAT-[FEAT]- assign role to manager." />
+    <MESSAGE value="FEAT-[FEAT]- assign agency and to manager to a manager." />
+    <MESSAGE value="FEAT-[FEAT]- Testing method that gets list of managers." />
+    <option name="LAST_COMMIT_MESSAGE" value="FEAT-[FEAT]- Testing method that gets list of managers." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="4" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/ma/atos/agencymanagement/controller/RoleControllerTest.java</url>
+          <line>70</line>
+          <properties class="ma.atos.agencymanagement.controller.RoleControllerTest" method="getRoleById">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint enabled="true" type="java-exception" />
+      </default-breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/ma_atos_agencymanagement$AgencymanagementApplication.ic" NAME="AgencymanagementApplication Coverage Results" MODIFIED="1617269923812" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/ma_atos_agencymanagement$AgencymanagementApplication.ic" NAME="AgencymanagementApplication Coverage Results" MODIFIED="1617620545238" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ma.atos.agencymanagement.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/ma_atos_agencymanagement$RoleControllerTest_getRoles.ic" NAME="RoleControllerTest.getRoles Coverage Results" MODIFIED="1617631380021" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ma.atos.agencymanagement.controller.*</FILTER>
+    </SUITE>
   </component>
 </project>

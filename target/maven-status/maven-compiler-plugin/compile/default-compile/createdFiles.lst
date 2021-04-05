@@ -3,6 +3,7 @@ ma\atos\agencymanagement\exception\AgencyNotFoundResponse.class
 ma\atos\agencymanagement\controller\HabilitationController.class
 ma\atos\agencymanagement\model\Agency.class
 ma\atos\agencymanagement\model\Modification.class
+ma\atos\agencymanagement\model\MergedAgency.class
 ma\atos\agencymanagement\service\HabilitationService.class
 ma\atos\agencymanagement\service\ManagerService.class
 ma\atos\agencymanagement\exception\AgencyNotFoundException.class

@@ -31,6 +31,7 @@ public class Habilitation {
     private List<Role> roles = new ArrayList<>();
 
 
-
+    public Habilitation(String s, String code, Date date, Date date1) {
+    }
 }
 
