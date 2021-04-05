@@ -45,5 +45,13 @@ public class ManagerController {
     public Manager assignRole(@RequestParam("idRole") Long roleId, @RequestParam("idManager") Long idManager){
        return managerService.assignRole(roleId,idManager);
     }
+    @PutMapping("/assignManager")
+    public Manager assignManager(@RequestParam("id1") Long id1, @RequestParam("id2") Long id2){
+        return managerService.assignManager(id1,id2);
+    }
+    @PutMapping("/assignAgency")
+    public Manager assignAgency(@RequestParam("idManager") Long idManager, @RequestParam("idAgency") Long idAgency){
+        return managerService.assignAgency(idManager,idAgency);
+    }
 
 }

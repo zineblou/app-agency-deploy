@@ -38,4 +38,9 @@ public class AgencyController {
     public void deleteAgency(@PathVariable("pId") Long id){
         agencyService.deleteAgency(id);
     }
+    @PutMapping("/disable/{pid}")
+    public void disbleAgency(@PathVariable("pid")Long id){
+        agencyService.disableAgency(id);
+
+    }
 }
