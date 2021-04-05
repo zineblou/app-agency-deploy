@@ -43,8 +43,5 @@ public class AgencyController {
         agencyService.disableAgency(id);
 
     }
-    @PostMapping("/agencies/merge")
-    public void mergeAgency(@RequestBody List<Long> aIds){
-        agencyService.mergeAgencies(aIds);
-    }
+
 }
