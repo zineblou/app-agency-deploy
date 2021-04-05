@@ -18,29 +18,36 @@ public class AgencyController {
         return agencyService.getAllAgencies();
     }
 
+
     @GetMapping("/agencies/{pId}")
     public Agency getAgency(@PathVariable("pId") Long id){
         return agencyService.getAgency(id).orElseThrow(()-> new AgencyNotFoundException(id));
     }
 
     @PostMapping("/agencies")
-    public void addAgency(@RequestBody Agency agency){
+    public String addAgency(@RequestBody Agency agency){
         agencyService.addAgency(agency);
+        return "The agency created successfully";
     }
 
-    @PutMapping("/agencies/{pId}")
-    public void updateAgency(@RequestBody Agency agency, @PathVariable("pId") Long id){
-        agencyService.updateAgency(id,agency);
+    @PutMapping("/agencies")
+    public String updateAgency(@RequestBody Agency agency){
+        agencyService.updateAgency(agency);
+        return "Manager updated successfully";
     }
 
     @DeleteMapping("/agencies/{pId}")
     public void deleteAgency(@PathVariable("pId") Long id){
         agencyService.deleteAgency(id);
     }
-    @PutMapping("/disable/{pid}")
-    public void disbleAgency(@PathVariable("pid")Long id){
+
+    @PutMapping("/disable/{pId}")
+    public void disableAgency(@PathVariable("pId")Long id){
         agencyService.disableAgency(id);
 
     }
 
+    @PostMapping("/merge")
+    public void mergeAgencies(@RequestBody List<Agency> agencyList){ agencyService.mergeAgencies(agencyList);}
 }
+
