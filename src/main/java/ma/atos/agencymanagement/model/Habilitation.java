@@ -18,6 +18,7 @@ import java.util.Optional;
 
 public class Habilitation {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String code;
     //le libelé
