@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f540f5f7-6dc4-4a60-a941-69330051884d" name="Default Changelist" comment="FEAT-[DEV]-ADD CLASS HABILITATION">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ma/atos/agencymanagement/controller/HabilitationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/atos/agencymanagement/controller/HabilitationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ma/atos/agencymanagement/controller/HabilitationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ma/atos/agencymanagement/controller/HabilitationTests.java" afterDir="false" />
     </list>
     <list id="e5d06627-3d59-4fb8-82ab-c6eb8a05d80c" name="FEAT-[DEV]-database connexion configuration" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,14 +62,16 @@
       <recent name="ma.atos.agencymanagement.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.HabilitationTests.addHabilitation">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="Spring Boot.AgencymanagementApplication">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -233,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617286210551</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="FEAT-[DEV]-ADD CLASS HABILITATION">
+      <created>1617382024694</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1617382024694</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,18 +261,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="FEAT-[DEV]-database connexion configuration" />
     <MESSAGE value="FEAT-[DEV]-database connexion configuration and creation of Manager and Modification classes." />
-    <option name="LAST_COMMIT_MESSAGE" value="FEAT-[DEV]-database connexion configuration and creation of Manager and Modification classes." />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ma/atos/agencymanagement/AgencymanagementApplication.java</url>
-          <line>10</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="FEAT-[DEV]-ADD CLASS HABILITATION" />
+    <option name="LAST_COMMIT_MESSAGE" value="FEAT-[DEV]-ADD CLASS HABILITATION" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ma_atos_agencymanagement$AgencymanagementApplication.ic" NAME="AgencymanagementApplication Coverage Results" MODIFIED="1617269923812" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
