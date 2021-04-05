@@ -1,7 +1,7 @@
 package ma.atos.agencymanagement.controller;
 
 import ma.atos.agencymanagement.AbstractTest;
-import ma.atos.agencymanagement.model.Habilitation;
+
 import ma.atos.agencymanagement.model.Role;
 import ma.atos.agencymanagement.repository.AgencyRepository;
 import ma.atos.agencymanagement.repository.HabilitationRepository;
@@ -16,10 +16,10 @@ import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.util.LinkedMultiValueMap;
+import ma.atos.agencymanagement.model.Habilitation;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
-
 
 public class RoleControllerTest extends AbstractTest {
 
@@ -104,18 +104,16 @@ public class RoleControllerTest extends AbstractTest {
 
     @Test
     public void assignHabilitation() throws Exception {
-//        Role role = roleRepository.findAll().get(0);
-//        Habilitation habilitation = habilitationRepository.findAll().get(0);
-//        String uri = "/assignHabilition";
-//
-//        LinkedMultiValueMap<String, String> requestParams = new LinkedMultiValueMap<>();
-//
-//        requestParams.add("idRole", " " + role.getId());
-//        requestParams.add("idHabilitation", " " + habilitation.getId());
-//        String inputJson = super.mapToJson(role);
-//        MvcResult mvcResult = mvc.perform(MockMvcRequestBuilders.put(uri)
-//                .contentType(MediaType.APPLICATION_JSON_VALUE).content(inputJson)).andReturn();
-//        int status = mvcResult.getResponse().getStatus();
-//        assertEquals(200, status);
+        Role role = roleRepository.findAll().get(0);
+        Habilitation habilitation = habilitationRepository.findAll().get(0);
+        String uri = "/assignHabilition";
+
+        LinkedMultiValueMap<String, String> requestParams = new LinkedMultiValueMap<>();
+
+        requestParams.add("roleId", " " + role.getId());
+        requestParams.add("habilitationId", " " + habilitation.getId());
+        MvcResult mvcResult = mvc.perform(MockMvcRequestBuilders.put(uri).params(requestParams)).andReturn();
+        int status = mvcResult.getResponse().getStatus();
+        assertEquals(200, status);
     }
 }
