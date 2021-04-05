@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: ma.atos.agencymanagement.AgencymanagementApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 8.264 s <<< FAILURE! - in ma.atos.agencymanagement.AgencymanagementApplicationTests
+contextLoads  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: java.lang.IllegalStateException: Failed to execute CommandLineRunner
+Caused by: java.lang.NullPointerException
+
