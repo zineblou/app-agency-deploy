@@ -26,10 +26,6 @@ public class Habilitation  extends Modification {
     private Date endDate;
 
 
-
-    @ManyToMany(cascade = {CascadeType.ALL})
-    private List<Role> roles = new ArrayList<>();
-
     public Habilitation( String code,String name, Date startDate, Date endDate) {
         this.code = code;
         this.name = name;

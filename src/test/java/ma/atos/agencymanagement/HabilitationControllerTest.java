@@ -56,24 +56,24 @@ public class HabilitationControllerTest extends AbstractTest {
 
     @Test
     public void updateHabilitation() throws Exception {
+
         String uri = "/habilitation/update";
         Habilitation habilitation = habilitationRepository.findAll().get(0);
-        //System.out.println("get the habiolitation code"+habilitation.getCode());
-        habilitation.setCode("newCode");
+        System.out.println("get name:"+habilitation.getName());
+        habilitation.setName("newName");
         String inputJson = super.mapToJson(habilitation);
         MvcResult mvcResult = mvc.perform(MockMvcRequestBuilders.put(uri)
                 .contentType(MediaType.APPLICATION_JSON_VALUE).content(inputJson)).andReturn();
 
         int status = mvcResult.getResponse().getStatus();
         assertEquals(200, status);
-        String content = mvcResult.getResponse().getContentAsString();
-        assertEquals(content, "Habilitation updated successfully");
 
     }
+
     @Test
     public void deleteHabilitation() throws  Exception{
         Habilitation habilitation = habilitationRepository.findAll().get(0);
-        String uir = "/habilitation/delete"+habilitation.getId();
+        String uir = "/habilitation/delete/"+habilitation.getId();
         MvcResult mvcResult = mvc.perform(MockMvcRequestBuilders.delete(uir)).andReturn();
         int status = mvcResult.getResponse().getStatus();
         assertEquals(200,status);

@@ -25,6 +25,10 @@ public class AgencymanagementApplication implements CommandLineRunner {
 
 	@Autowired
     private ManagerRepository managerRepository;
+
+	@Autowired
+    private HabilitationRepository habilitationRepository;
+
 //
 //	@Autowired
 //	private RoleRepository roleRepository;
@@ -44,6 +48,7 @@ public class AgencymanagementApplication implements CommandLineRunner {
 	public void run(String... args) throws Exception {
  	for(int i = 0; i <10; i++){
 		managerRepository.save(new Manager("i","name"+i,"prenom"+i, new Date()));
+		habilitationRepository.save(new Habilitation("name"+i,"code" ,new Date(),new Date()));
 
 	}
 //	Manager manager = managerRepository.findById(1L).get();
