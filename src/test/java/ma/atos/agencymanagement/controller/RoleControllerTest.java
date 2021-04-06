@@ -102,6 +102,7 @@ public class RoleControllerTest extends AbstractTest {
         assertEquals(200, status);
     }
 
+
     @Test
     public void assignHabilitation() throws Exception {
         Role role = roleRepository.findAll().get(0);
