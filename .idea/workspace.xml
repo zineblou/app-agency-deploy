@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f540f5f7-6dc4-4a60-a941-69330051884d" name="Default Changelist" comment="FEAT-[DIV]- Testing method that ROLE SERVICE">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ma/atos/agencymanagement/controller/RoleControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ma/atos/agencymanagement/controller/RoleControllerTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="f540f5f7-6dc4-4a60-a941-69330051884d" name="Default Changelist" comment="FEAT-[DIV]- Testing method that ROLE SERVICE" />
     <list id="e5d06627-3d59-4fb8-82ab-c6eb8a05d80c" name="FEAT-[DEV]-database connexion configuration" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +21,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="eljebrouni soufian &lt;eljebrounisoufian@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
@@ -260,7 +262,7 @@
       <workItem from="1617606218472" duration="678000" />
       <workItem from="1617629907523" duration="14148000" />
       <workItem from="1617645012649" duration="436000" />
-      <workItem from="1617696679703" duration="750000" />
+      <workItem from="1617696679703" duration="1250000" />
     </task>
     <task id="LOCAL-00001" summary="FEAT-[DEV]-database connexion configuration">
       <created>1617266683442</created>
@@ -381,7 +383,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617645361858</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="FEAT-[DIV]- Testing method that ROLE SERVICE">
+      <created>1617697640204</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1617697640204</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -407,6 +416,7 @@
     <MESSAGE value="FEAT-[FEAT]- assign role to manager." />
     <MESSAGE value="FEAT-[FEAT]- assign agency and to manager to a manager." />
     <MESSAGE value="FEAT-[FEAT]- Testing method that gets list of managers." />
+    <MESSAGE value="FEAT-[TEST]- Methode AssignHabilitation" />
     <MESSAGE value="FEAT-[DIV]- Testing method that ROLE SERVICE" />
     <option name="LAST_COMMIT_MESSAGE" value="FEAT-[DIV]- Testing method that ROLE SERVICE" />
   </component>
