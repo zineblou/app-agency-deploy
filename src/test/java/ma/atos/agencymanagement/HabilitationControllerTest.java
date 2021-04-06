@@ -34,6 +34,7 @@ public class HabilitationControllerTest extends AbstractTest {
                 .accept(MediaType.APPLICATION_JSON_VALUE)).andReturn();
 
         int status = mvcResult.getResponse().getStatus();
+
         //Verify request succeed
         assertEquals(200, status);
 
