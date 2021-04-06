@@ -84,6 +84,7 @@ public class ManagerControllerTest extends AbstractTest {
         assertEquals(content, "Manager updated successfully");
     }
 
+
     @Test
     public void deleteManager() throws  Exception{
         Manager manager = managerRepository.findAll().get(0);
