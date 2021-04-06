@@ -101,6 +101,7 @@ public class ManagerControllerTest extends AbstractTest {
          *         the first element is deleted after the execution of the delete method
          */
 
+
         Manager manager = managerRepository.findAll().get(managerRepository.findAll().size()-1);
         Manager manager1 = managerRepository.findAll().get(managerRepository.findAll().size()-2);
         String uir = "/manager/assignManager";
