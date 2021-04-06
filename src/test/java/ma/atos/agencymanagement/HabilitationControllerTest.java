@@ -32,6 +32,7 @@ public class HabilitationControllerTest extends AbstractTest {
         String uri = "/habilitation/habilitations";
         MvcResult mvcResult = mvc.perform(MockMvcRequestBuilders.get(uri)
                 .accept(MediaType.APPLICATION_JSON_VALUE)).andReturn();
+
         int status = mvcResult.getResponse().getStatus();
         //Verify request succeed
         assertEquals(200, status);
