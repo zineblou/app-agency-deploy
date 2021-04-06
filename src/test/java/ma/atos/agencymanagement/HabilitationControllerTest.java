@@ -67,7 +67,6 @@ public class HabilitationControllerTest extends AbstractTest {
         String inputJson = super.mapToJson(habilitation);
         MvcResult mvcResult = mvc.perform(MockMvcRequestBuilders.put(uri)
                 .contentType(MediaType.APPLICATION_JSON_VALUE).content(inputJson)).andReturn();
-
         int status = mvcResult.getResponse().getStatus();
         assertEquals(200, status);
 
