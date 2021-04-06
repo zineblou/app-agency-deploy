@@ -75,7 +75,6 @@ public class HabilitationControllerTest extends AbstractTest {
     public void deleteHabilitation() throws  Exception{
         Habilitation habilitation = habilitationRepository.findAll().get(0);
         String uir = "/habilitation/delete/"+habilitation.getId();
-
         MvcResult mvcResult = mvc.perform(MockMvcRequestBuilders.delete(uir)).andReturn();
         int status = mvcResult.getResponse().getStatus();
         assertEquals(200,status);
