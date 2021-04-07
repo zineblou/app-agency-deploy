@@ -33,21 +33,26 @@ public class AgencyController {
     @PutMapping("/agencies")
     public String updateAgency(@RequestBody Agency agency){
         agencyService.updateAgency(agency);
-        return "Manager updated successfully";
+        return "Agency updated successfully";
     }
 
     @DeleteMapping("/agencies/{pId}")
-    public void deleteAgency(@PathVariable("pId") Long id){
+    public String deleteAgency(@PathVariable("pId") Long id){
         agencyService.deleteAgency(id);
+        return "Agency deleted successfully";
     }
 
     @PutMapping("/disable/{pId}")
-    public void disableAgency(@PathVariable("pId")Long id){
+    public String disableAgency(@PathVariable("pId")Long id){
         agencyService.disableAgency(id);
+        return "Agency disabled successfully";
 
     }
 
     @PostMapping("/merge")
-    public void mergeAgencies(@RequestBody List<Agency> agencyList){ agencyService.mergeAgencies(agencyList);}
+    public String mergeAgencies(@RequestBody List<Agency> agencyList){
+        agencyService.mergeAgencies(agencyList);
+        return "Agencies merged successfully";
+    }
 }
 

@@ -18,20 +18,26 @@ public class AgencyService {
 
 
     @Autowired
-    private AgencyRepository agencyRepository;
+    private AgencyRepository<Agency> agencyRepository;
+    private AgencyRepository<AgencyMerge> agencyMergeRepository;
+
+
 
     public List<Agency> getAllAgencies() {
         List<Agency> agencies = new ArrayList<>();
+
         agencyRepository.findAll().forEach(agencies::add);
         return agencies;
 
     }
 
     public Optional<Agency> getAgency(Long id) {
+
         return agencyRepository.findById(id);
     }
 
     public void addAgency(Agency agency) {
+
         agencyRepository.save(agency);
     }
 
@@ -60,8 +66,11 @@ public class AgencyService {
     }
 
     public void mergeAgencies(List<Agency> agencyList) {
+
         AgencyMerge agencyMerge = new AgencyMerge();
+        agencyMerge.setPlaceCode(33L);
         agencyMerge.setAgencyList(agencyList);
+        agencyMergeRepository.save(agencyMerge);
 
         for (Agency temp : agencyList) {
             disableAgency(temp.getPlaceCode());
