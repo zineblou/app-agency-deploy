@@ -1,48 +1,60 @@
 package ma.atos.agencymanagement.controller;
 
-import lombok.AllArgsConstructor;
+
 import ma.atos.agencymanagement.model.Habilitation;
 import ma.atos.agencymanagement.service.HabilitationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+
 import java.util.List;
 
 @RestController
-@RequestMapping("habilitaion")
+@RequestMapping("habilitation")
 class HabilitationController {
     @Autowired
-    private HabilitationService service;
+    private HabilitationService habilitationService;
 
+    // add habilitation method
      @PostMapping("/addHabilitation")
     public Habilitation addHabilitation(@RequestBody Habilitation habilitation) {
-        return service.saveHabilitation(habilitation);
-    }
-
-    @PostMapping("/addHabilitations")
-    public List<Habilitation> addHabilitation(@RequestBody List<Habilitation> habilitations) {
-        return service.saveHabilitation(habilitations);
+        return habilitationService.saveHabilitation(habilitation);
     }
 
     @GetMapping("/habilitations")
-    public List<Habilitation> findAllHabilitation() {
-        return service.getHabilitation();
+    public List<Habilitation> getHabilitations() {
+        return habilitationService.getHabilitations();
     }
 
+    // add habilitation method
+    @PostMapping("/addHabilitations")
+    public List<Habilitation> addHabilitation(@RequestBody List<Habilitation> habilitations) {
+        return habilitationService.saveHabilitation(habilitations);
+    }
+
+
+
+
+    // Get a single habilitation by id
     @GetMapping("/HabilitationById/{id}")
-    public Habilitation findHabilitationById(@PathVariable long id) {
-        return service.getHabilitationById(id);
+    public Habilitation getHabilitationById(@PathVariable Long id) {
+        return habilitationService.getHabilitationById(id);
 
     }
 
-    @PutMapping("/updateHabilitaion")
+    // Update habilitation method
+    @PutMapping("/update")
     public Habilitation updateHabilitation(@RequestBody Habilitation habilitation) {
-        return service.updateHabilitation(habilitation);
+        return habilitationService.updateHabilitation(habilitation);
     }
 
-    @DeleteMapping("/deleteHabilitation/{id}")
+    // Update habilitation method
+    @DeleteMapping("/delete/{id}")
     public void deleteHabilitation(@PathVariable Long id) {
-         service.deleteHabilitation(id);
+        habilitationService.deleteHabilitation(id);
     }
+
+
+
 }
 

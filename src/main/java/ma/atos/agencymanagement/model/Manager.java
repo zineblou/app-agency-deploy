@@ -17,6 +17,7 @@ import java.util.List;
 @ToString
 @Entity
 public class Manager extends Modification {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -24,11 +25,17 @@ public class Manager extends Modification {
     private String firstName;
     private String lastName;
     private Date integrationDate;
+    @ManyToMany(fetch = FetchType.EAGER)
+    private List<Role> roles = new ArrayList<Role>();
     @ManyToOne
     private Manager manager;
-    @ManyToMany(cascade = {CascadeType.ALL})
-    private List<Role> roles = new ArrayList<>();
+    @ManyToOne
+    private Agency agency;
 
-
-
+    public Manager(    String registrationNumber, String firstName, String lastName, Date integrationDate) {
+        this.registrationNumber = registrationNumber;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.integrationDate = integrationDate;
+    }
 }

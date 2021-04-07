@@ -8,24 +8,18 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("role")
 public class RoleController {
     @Autowired
     private RoleService roleService;
-
-    @PostMapping(value = "/add")
-    public Role addRole(Role role) {
-        return roleService.saveRole(role);
-    }
 
     @GetMapping(value = "/listroles")
     public List<Role> getRoles() {
         return roleService.getRoles();
     }
 
-    @GetMapping(value = "/role/{id}")
-    public Role getRoleById(@PathVariable Long id) {
-        return roleService.getById(id);
+    @PostMapping(value = "/addrole")
+    public Role addRole(Role role) {
+        return roleService.saveRole(role);
     }
 
     @PutMapping(value = "/update")
@@ -33,16 +27,24 @@ public class RoleController {
         return roleService.saveRole(role);
     }
 
-    @PutMapping(value = "/listroles/{id}")
-    public Role update(@PathVariable(name = "id") Long id, @RequestBody Role role) {
-        role.setId(id);
-        return roleService.saveRole(role);
+    @GetMapping(value = "/role/{id}")
+    public Role getRoleById(@PathVariable Long id) {
+        return roleService.getById(id);
     }
+
+
+
+
 
     @DeleteMapping(value = "/deleteRole/{id}")
     public void deleteRole(@PathVariable Long id) {
         roleService.deletRole(id);
     }
+    @PutMapping("/assignHabilition")
+    public Role assignHabilitation(@RequestParam("roleId") Long roleId, @RequestParam("habilitationId") Long habilitationId){
+        return roleService.assignHabilitation(roleId,habilitationId);
+    }
+
 }
 
 
