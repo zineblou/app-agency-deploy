@@ -36,7 +36,5 @@ public class Habilitation  extends Modification {
     }
 
 
-    public Habilitation(String s, String code, Date date, Date date1) {
-    }
 }
 

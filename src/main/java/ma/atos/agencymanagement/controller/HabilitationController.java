@@ -21,6 +21,7 @@ class HabilitationController {
         return habilitationService.saveHabilitation(habilitation);
     }
 
+    //add list of habilitation
     @GetMapping("/habilitations")
     public List<Habilitation> getHabilitations() {
         return habilitationService.getHabilitations();
