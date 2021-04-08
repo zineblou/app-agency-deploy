@@ -12,24 +12,28 @@ import java.util.stream.Collectors;
 @Component
 public class AgencyConverter {
 
+    //From agency to agency dto
     public AgencyDTO FromAgencyToAgencyDto(Agency agency){
         ModelMapper mapper =new ModelMapper();
         return mapper.map(agency, AgencyDTO.class);
     }
 
-    public Agency FromAgencyDtoToAgency(AgencyDTO AgencyDTO){
+    //From Dto to agency entity
+    public Agency FromAgencyDtoToAgency(AgencyDTO agencyDTO){
         ModelMapper mapper =new ModelMapper();
-        return mapper.map(AgencyDTO, Agency.class);
+        return mapper.map(agencyDTO, Agency.class);
     }
 
-    public List<AgencyDTO> FromListAgencysToListAgencysDto(List<Agency> Agencies){
+    //From agency list to agency Dto
+    public List<AgencyDTO> FromListAgencysToListAgencysDto(List<Agency> agencies){
         ModelMapper mapper =new ModelMapper();
-        return Agencies.stream().map(this::FromAgencyToAgencyDto).collect(Collectors.toList());
+        return agencies.stream().map(this::FromAgencyToAgencyDto).collect(Collectors.toList());
     }
 
-    public List<Agency> FromListAgencysDtoToListAgencys(List<AgencyDTO> AgenciesDto){
+    //From dto agency list to agency entity
+    public List<Agency> FromListAgencysDtoToListAgencys(List<AgencyDTO> agenciesDto){
         ModelMapper mapper =new ModelMapper();
-        return AgenciesDto.stream().map(this::FromAgencyDtoToAgency).collect(Collectors.toList());
+        return agenciesDto.stream().map(this::FromAgencyDtoToAgency).collect(Collectors.toList());
 
     }
 

@@ -12,21 +12,28 @@ import java.util.stream.Collectors;
 @Component
 public class ManagerConverter {
 
-    public ManagerDTO FromManagerToManagerDto(Manager Manager){
+
+    //From Manager entity to Manager dto
+    public ManagerDTO FromManagerToManagerDto(Manager manager){
         ModelMapper mapper =new ModelMapper();
-        return mapper.map(Manager, ManagerDTO.class);
+        return mapper.map(manager, ManagerDTO.class);
     }
 
-    public Manager FromManagerDtoToManager(ManagerDTO ManagerDTO){
+
+    //From Manager dto to Manager entity
+    public Manager FromManagerDtoToManager(ManagerDTO managerDTO){
         ModelMapper mapper =new ModelMapper();
-        return mapper.map(ManagerDTO, Manager.class);
+        return mapper.map(managerDTO, Manager.class);
     }
 
+    //From Manager entity list to Manager dto list
     public List<ManagerDTO> FromListManagersToListManagersDto(List<Manager> managers){
         ModelMapper mapper =new ModelMapper();
         return managers.stream().map(this::FromManagerToManagerDto).collect(Collectors.toList());
     }
 
+
+    //From Manager dto list to Manager list
     public List<Manager> FromListManagersDtoToListManagers(List<ManagerDTO> managersDto){
         ModelMapper mapper =new ModelMapper();
         return managersDto.stream().map(this::FromManagerDtoToManager).collect(Collectors.toList());
