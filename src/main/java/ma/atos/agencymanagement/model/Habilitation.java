@@ -23,7 +23,11 @@ public class Habilitation  extends Modification {
     private String code;
     //le libelé
     private String name;
+
+    @Temporal(TemporalType.TIMESTAMP)
     private Date startDate;
+
+    @Temporal(TemporalType.TIMESTAMP)
     private Date endDate;
 
 
