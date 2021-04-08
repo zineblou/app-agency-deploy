@@ -1,5 +1,6 @@
 package ma.atos.agencymanagement.controller;
 
+import ma.atos.agencymanagement.AbstractTest;
 import ma.atos.agencymanagement.model.Agency;
 import ma.atos.agencymanagement.model.Manager;
 import ma.atos.agencymanagement.repository.AgencyRepository;
@@ -20,7 +21,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class AgencyControllerTest extends AbstractTest{
+public class AgencyControllerTest extends AbstractTest {
     @Override
     @Before
     public void setUp() {

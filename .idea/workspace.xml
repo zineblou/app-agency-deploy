@@ -4,59 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f540f5f7-6dc4-4a60-a941-69330051884d" name="Default Changelist" comment="FEAT-[DIV]- Testing method that ROLE SERVICE">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ma/atos/agencymanagement/dto/AgencyDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ma/atos/agencymanagement/dto/AgencyMergeDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ma/atos/agencymanagement/dto/HabilitationDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ma/atos/agencymanagement/dto/ManagerDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ma/atos/agencymanagement/dto/MergedAgencyDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ma/atos/agencymanagement/dto/ModificationDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ma/atos/agencymanagement/dto/RoleDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ma/atos/agencymanagement/service/RoleServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_inline_3_6_28.xml" beforeDir="false" />
+    <list default="true" id="f540f5f7-6dc4-4a60-a941-69330051884d" name="Default Changelist" comment="FEAT-[FIX]-Add Comments">
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_01_04_2021_10_49__FEAT-_DEV_-database_connexion_confi.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_01_04_2021_10_49__FEAT-_DEV_-database_connexion_confi.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ma.atos.agencymanagement.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ma.atos.agencymanagement.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ma/atos/agencymanagement/AgencymanagementApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ma/atos/agencymanagement/controller/AgencyController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ma/atos/agencymanagement/controller/HabilitationController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ma/atos/agencymanagement/controller/ManagerController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ma/atos/agencymanagement/controller/RoleController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ma/atos/agencymanagement/exception/AgencyNotFoundException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ma/atos/agencymanagement/exception/AgencyNotFoundResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ma/atos/agencymanagement/model/AgencyMerge.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ma/atos/agencymanagement/model/Habilitation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ma/atos/agencymanagement/model/Habilitation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ma/atos/agencymanagement/repository/AgencyRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ma/atos/agencymanagement/repository/HabilitationRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ma/atos/agencymanagement/repository/ManagerRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ma/atos/agencymanagement/repository/RoleRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ma/atos/agencymanagement/service/AgencyService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ma/atos/agencymanagement/service/HabilitationService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ma/atos/agencymanagement/service/ManagerService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ma/atos/agencymanagement/service/RoleService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-ma.atos.agencymanagement.AgencymanagementApplicationTests.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-ma.atos.agencymanagement.controller.HabilitationControllerTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-ma.atos.agencymanagement.controller.HabilitationTests.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-ma.atos.agencymanagement.controller.RoleControllerTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/ma.atos.agencymanagement.AgencymanagementApplicationTests.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/ma.atos.agencymanagement.controller.HabilitationControllerTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/ma.atos.agencymanagement.controller.HabilitationTests.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/ma.atos.agencymanagement.controller.RoleControllerTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ma/atos/agencymanagement/AbstractTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ma/atos/agencymanagement/AgencymanagementApplicationTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ma/atos/agencymanagement/HabilitationControllerTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ma/atos/agencymanagement/ManagerControllerTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ma/atos/agencymanagement/controller/AbstractTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ma/atos/agencymanagement/controller/AgencyControllerTest$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ma/atos/agencymanagement/controller/AgencyControllerTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ma/atos/agencymanagement/controller/HabilitationTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ma/atos/agencymanagement/controller/ManagerControllerTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ma/atos/agencymanagement/controller/RoleControllerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ma/atos/agencymanagement/service/ManagerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/atos/agencymanagement/service/ManagerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ma/atos/agencymanagement/ManagerControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ma/atos/agencymanagement/ManagerControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ma/atos/agencymanagement/controller/AgencyControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ma/atos/agencymanagement/controller/AgencyControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ma/atos/agencymanagement/model/Agency.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ma/atos/agencymanagement/model/Habilitation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ma/atos/agencymanagement/model/Manager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ma/atos/agencymanagement/model/MergedAgency.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ma/atos/agencymanagement/model/Modification.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ma/atos/agencymanagement/model/Role.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
     </list>
     <list id="e5d06627-3d59-4fb8-82ab-c6eb8a05d80c" name="FEAT-[DEV]-database connexion configuration" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,8 +34,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -88,13 +54,6 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
-  </component>
-  <component name="InvalidFacetManager">
-    <ignored-facets>
-      <facet id="ma.atos.agencymanagement/invalid/JPA" />
-      <facet id="ma.atos.agencymanagement/invalid/Spring" />
-      <facet id="ma.atos.agencymanagement/invalid/Web" />
-    </ignored-facets>
   </component>
   <component name="ProjectId" id="1qWnJcS4vgPEdWgN2qyQsSY9ZtR" />
   <component name="ProjectLevelVcsManager">
@@ -117,7 +76,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/ma/atos/agencymanagement" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -127,35 +86,21 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\soufi\Desktop\test\agencyManagement\src\main\java\ma\atos\agencymanagement" />
-    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="ma.atos.agencymanagement.service" />
       <recent name="ma.atos.agencymanagement" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="ma.atos.agencymanagement.service" />
       <recent name="ma.atos.agencymanagement.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RoleControllerTest.assignHabilitation">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.AgencymanagementApplication">
     <configuration name="AgencymanagementApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ma.atos.agencymanagement.AgencymanagementApplication" />
       <module name="ma.atos.agencymanagement" />
@@ -165,6 +110,19 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -189,7 +147,7 @@
       <module name="ma.atos.agencymanagement" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ma.atos.agencymanagement.controller.*" />
+          <option name="PATTERN" value="ma.atos.agencymanagement.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -204,7 +162,7 @@
       <module name="ma.atos.agencymanagement" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ma.atos.agencymanagement.controller.*" />
+          <option name="PATTERN" value="ma.atos.agencymanagement.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -220,7 +178,7 @@
       <module name="ma.atos.agencymanagement" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ma.atos.agencymanagement.controller.*" />
+          <option name="PATTERN" value="ma.atos.agencymanagement.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -327,6 +285,7 @@
       <workItem from="1617629907523" duration="14148000" />
       <workItem from="1617645012649" duration="436000" />
       <workItem from="1617696679703" duration="1250000" />
+      <workItem from="1617875328747" duration="1491000" />
     </task>
     <task id="LOCAL-00001" summary="FEAT-[DEV]-database connexion configuration">
       <created>1617266683442</created>
@@ -506,11 +465,9 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/ma_atos_agencymanagement$AgencymanagementApplication.ic" NAME="AgencymanagementApplication Coverage Results" MODIFIED="1617620545238" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>ma.atos.agencymanagement.*</FILTER>
-    </SUITE>
     <SUITE FILE_PATH="coverage/ma_atos_agencymanagement$RoleControllerTest_getRoles.ic" NAME="RoleControllerTest.getRoles Coverage Results" MODIFIED="1617631380021" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>ma.atos.agencymanagement.controller.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/ma_atos_agencymanagement$AgencymanagementApplication.ic" NAME="AgencymanagementApplication Coverage Results" MODIFIED="1617624582285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

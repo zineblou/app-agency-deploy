@@ -67,7 +67,7 @@ public class ManagerService {
 
     public Manager assignAgency(Long managerId, Long agencyId){
         Manager manager = managerRepository.findById(managerId).get();
-        Agency agency = agencyRepository.findById(agencyId).get();
+        Agency agency = (Agency) agencyRepository.findById(agencyId).get();
         manager.setAgency(agency);
         return managerRepository.save(manager);
     }
