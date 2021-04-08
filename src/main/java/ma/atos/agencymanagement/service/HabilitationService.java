@@ -5,16 +5,13 @@ import ma.atos.agencymanagement.repository.HabilitationRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-
-
 import java.util.List;
-
 
 
 @Service
 public class HabilitationService {
     @Autowired
-     private HabilitationRepository habilitationRepository;
+    private HabilitationRepository habilitationRepository;
 
 
     public Habilitation saveHabilitation(Habilitation habilitation) {
@@ -22,43 +19,40 @@ public class HabilitationService {
         return habilitationRepository.save(habilitation);
     }
 
-    public List<Habilitation> saveHabilitation(List<Habilitation> habilitations)
-    {
+    public List<Habilitation> saveHabilitation(List<Habilitation> habilitations) {
         return habilitationRepository.saveAll(habilitations);
 
     }
 
-    public  List<Habilitation> getHabilitations()
-    {
+    public List<Habilitation> getHabilitations() {
         return habilitationRepository.findAll();
 
     }
- public Habilitation getHabilitationById(long id)
-    {
+
+    public Habilitation getHabilitationById(long id) {
         return habilitationRepository.findById(id).orElse(null);
 
     }
 
 
-  public String deleteHabilitation(Long id)
-    {
+    public String deleteHabilitation(Long id) {
         habilitationRepository.deleteById(id);
-        return "habilitation removed !!  "+id;
+        return "habilitation removed !!  " + id;
 
     }
-   public Habilitation updateHabilitation(Habilitation habilitation) {
+
+    public Habilitation updateHabilitation(Habilitation habilitation) {
 
 
-       Habilitation existingHabilitation = habilitationRepository.findById(habilitation.getId()).orElse(null);
-       assert existingHabilitation != null;
-       existingHabilitation.setId(habilitation.getId());
-       existingHabilitation.setCode(habilitation.getCode());
-       existingHabilitation.setName(habilitation.getName());
-       existingHabilitation.setStartDate(habilitation.getStartDate());
-       existingHabilitation.setEndDate(habilitation.getEndDate());
-       return habilitationRepository.save(existingHabilitation);
-   }
-   
+        Habilitation existingHabilitation = habilitationRepository.findById(habilitation.getId()).orElse(null);
+        assert existingHabilitation != null;
+        existingHabilitation.setId(habilitation.getId());
+        existingHabilitation.setCode(habilitation.getCode());
+        existingHabilitation.setName(habilitation.getName());
+        existingHabilitation.setStartDate(habilitation.getStartDate());
+        existingHabilitation.setEndDate(habilitation.getEndDate());
+        return habilitationRepository.save(existingHabilitation);
+    }
 
 
 }

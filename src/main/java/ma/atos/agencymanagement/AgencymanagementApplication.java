@@ -1,15 +1,21 @@
 package ma.atos.agencymanagement;
 
-		import ma.atos.agencymanagement.model.Agency;
-		import ma.atos.agencymanagement.repository.AgencyRepository;
-		import org.springframework.beans.factory.annotation.Autowired;
-		import org.springframework.boot.CommandLineRunner;
-		import org.springframework.boot.SpringApplication;
-		import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-		import java.util.Date;
+import ma.atos.agencymanagement.model.Agency;
+import ma.atos.agencymanagement.repository.AgencyRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
+import java.util.Date;
+
+@EnableDiscoveryClient
 @SpringBootApplication
+
+
+
 public class AgencymanagementApplication implements CommandLineRunner {
 
 	@Autowired
