@@ -132,7 +132,7 @@ public class ManagerControllerTest extends AbstractTest {
 
     @Test
     public void assignAgency() throws  Exception{
-        Agency agency = agencyRepository.findAll().get(agencyRepository.findAll().size()-1);
+        Agency agency = (Agency) agencyRepository.findAll().get(agencyRepository.findAll().size()-1);
         Manager manager = managerRepository.findAll().get(managerRepository.findAll().size()-1);
         String uir = "/manager/assignAgency";
         LinkedMultiValueMap<String, String> requestParams = new LinkedMultiValueMap<>();
