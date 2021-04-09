@@ -1,11 +1,12 @@
 package ma.atos.agencymanagement.controller;
 
 
+import ma.atos.agencymanagement.converter.HabilitationConverter;
+import ma.atos.agencymanagement.dto.HabilitationDTO;
 import ma.atos.agencymanagement.model.Habilitation;
 import ma.atos.agencymanagement.service.HabilitationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
 
 import java.util.List;
 
@@ -14,47 +15,59 @@ import java.util.List;
 class HabilitationController {
     @Autowired
     private HabilitationService habilitationService;
+    @Autowired
+    private HabilitationConverter habilitationConverter;
 
     // add habilitation method
-     @PostMapping("/addHabilitation")
-    public Habilitation addHabilitation(@RequestBody Habilitation habilitation) {
-        return habilitationService.saveHabilitation(habilitation);
+    @PostMapping("/addHabilitation")
+    public HabilitationDTO addHabilitation(@RequestBody HabilitationDTO habilitationDTO) {
+        return (HabilitationDTO) habilitationConverter.
+                FromListHabilitionsToListHabilitationDto(habilitationService.saveHabilitation(habilitationConverter.
+                        FromListHabilitationdDtoToListHabilitations((List<HabilitationDTO>) habilitationDTO)));
     }
+
 
     //add list of habilitation
     @GetMapping("/habilitations")
-    public List<Habilitation> getHabilitations() {
-        return habilitationService.getHabilitations();
+    public List<HabilitationDTO> getHabilitations() {
+        return habilitationConverter.
+                FromListHabilitionsToListHabilitationDto(habilitationService.getHabilitations());
+
+
     }
+
 
     // add habilitation method
     @PostMapping("/addHabilitations")
-    public List<Habilitation> addHabilitation(@RequestBody List<Habilitation> habilitations) {
-        return habilitationService.saveHabilitation(habilitations);
+    public List<HabilitationDTO> addHabilitation(@RequestBody List<HabilitationDTO> habilitationsDTO) {
+        return habilitationConverter
+                .FromListHabilitionsToListHabilitationDto(habilitationService
+                        .saveHabilitation(habilitationConverter.FromListHabilitationdDtoToListHabilitations(habilitationsDTO)));
     }
-
-
 
 
     // Get a single habilitation by id
     @GetMapping("/HabilitationById/{id}")
-    public Habilitation getHabilitationById(@PathVariable Long id) {
-        return habilitationService.getHabilitationById(id);
-
+    public HabilitationDTO getHabilitationById(@PathVariable Long id) {
+        return (HabilitationDTO) habilitationConverter.
+                FromListHabilitionsToListHabilitationDto((List<Habilitation>) habilitationService
+                        .getHabilitationById(id));
     }
 
     // Update habilitation method
     @PutMapping("/update")
-    public Habilitation updateHabilitation(@RequestBody Habilitation habilitation) {
-        return habilitationService.updateHabilitation(habilitation);
+    public HabilitationDTO updateHabilitation(@RequestBody HabilitationDTO habilitationDTO) {
+        return (HabilitationDTO) habilitationConverter.
+                FromListHabilitionsToListHabilitationDto(habilitationService.
+                        saveHabilitation(habilitationConverter
+                                .FromListHabilitationdDtoToListHabilitations((List<HabilitationDTO>) habilitationDTO)));
     }
 
-    // Update habilitation method
+    // Delete  habilitation method
     @DeleteMapping("/delete/{id}")
     public void deleteHabilitation(@PathVariable Long id) {
         habilitationService.deleteHabilitation(id);
     }
-
 
 
 }

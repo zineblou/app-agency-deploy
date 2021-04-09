@@ -1,7 +1,10 @@
 package ma.atos.agencymanagement.controller;
+import ma.atos.agencymanagement.converter.AgencyConverter;
+import ma.atos.agencymanagement.dto.AgencyDTO;
 import ma.atos.agencymanagement.exception.AgencyNotFoundException;
 import ma.atos.agencymanagement.model.Agency;
 import ma.atos.agencymanagement.service.AgencyService;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -12,37 +15,45 @@ public class AgencyController {
 
     @Autowired
     private AgencyService agencyService;
+    @Autowired
+    private AgencyConverter agencyConverter;
+
 
     // add List of agencies
     @GetMapping("/agencies")
-    public List<Agency> getAllAgencies(){
-        return agencyService.getAllAgencies();
-    }
+    public List<AgencyDTO> getAllAgencies(){
 
-    //Ad agencies by id
+//
+        return agencyConverter.FromListAgencysToListAgencysDto(agencyService.getAllAgencies());
+
+    }
+// Get Agencies By Id
     @GetMapping("/agencies/{pId}")
-    public Agency getAgency(@PathVariable("pId") Long id){
-        return agencyService.getAgency(id).orElseThrow(()-> new AgencyNotFoundException(id));
+    public AgencyDTO getAgencyDTO(@PathVariable("pId") Long id){
+//
+        return agencyConverter.FromAgencyToAgencyDto(agencyService.getAgency(id).get());
+
     }
 
-    //Create new agencies
+
     @PostMapping("/agencies")
-    public String addAgency(@RequestBody Agency agency){
-        agencyService.addAgency(agency);
+    public String addAgency( AgencyDTO agencyDTO){
+       agencyConverter.FromAgencyToAgencyDto(agencyService.addAgency(agencyConverter.FromAgencyDtoToAgency(agencyDTO)));
         return "The agency created successfully";
     }
 
+
     //Update agencies
     @PutMapping("/agencies")
-    public String updateAgency(@RequestBody Agency agency){
-        agencyService.updateAgency(agency);
+    public String updateAgency(@RequestBody AgencyDTO agencyDTO){
+        agencyConverter.FromAgencyToAgencyDto(agencyService.updateAgency(agencyConverter.FromAgencyDtoToAgency(agencyDTO)));
         return "Agency updated successfully";
     }
 
     //Delete agencies by id
     @DeleteMapping("/agencies/{pId}")
     public String deleteAgency(@PathVariable("pId") Long id){
-        agencyService.deleteAgency(id);
+    agencyService.deleteAgency(id);
         return "Agency deleted successfully";
     }
 
