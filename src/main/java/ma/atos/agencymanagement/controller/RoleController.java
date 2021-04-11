@@ -1,5 +1,7 @@
 package ma.atos.agencymanagement.controller;
 
+import ma.atos.agencymanagement.converter.RoleConverter;
+import ma.atos.agencymanagement.dto.RoleDTO;
 import ma.atos.agencymanagement.model.Role;
 import ma.atos.agencymanagement.service.RoleService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,26 +10,31 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@RequestMapping("/role")
 public class RoleController {
     @Autowired
     private RoleService roleService;
 
+    @Autowired
+    private RoleConverter roleConverter;
+
     //Get the list of roles
     @GetMapping(value = "/listroles")
-    public List<Role> getRoles() {
-        return roleService.getRoles();
+    public List<RoleDTO> getRoles() {
+        return roleConverter.FromListRolesToListRolesDto(roleService.getRoles());
     }
 
     //Add a new role
     @PostMapping(value = "/addrole")
-    public Role addRole(Role role) {
-        return roleService.saveRole(role);
+    public RoleDTO addRole(RoleDTO roleDTO) {
+
+        return roleConverter.FromRoleToRoleDto(roleService.saveRole(roleConverter.FromRoleDtoToRole(roleDTO)));
     }
 
     //Update the roles
     @PutMapping(value = "/update")
-    public Role updateRole(@RequestBody Role role) {
-        return roleService.saveRole(role);
+    public RoleDTO updateRole(@RequestBody RoleDTO roleDTO) {
+        return roleConverter.FromRoleToRoleDto(roleService.update(roleConverter.FromRoleDtoToRole(roleDTO)));
     }
 
     //Get the manager by id
@@ -44,8 +51,8 @@ public class RoleController {
 
     //Asign Habilitation to the role
     @PutMapping("/assignHabilition")
-    public Role assignHabilitation(@RequestParam("roleId") Long roleId, @RequestParam("habilitationId") Long habilitationId){
-        return roleService.assignHabilitation(roleId,habilitationId);
+    public Role assignHabilitation(@RequestParam("roleId") Long roleId, @RequestParam("habilitationId") Long habilitationId) {
+        return roleService.assignHabilitation(roleId, habilitationId);
     }
 
 }

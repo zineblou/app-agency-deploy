@@ -29,7 +29,7 @@ public class ManagerController {
     //ADD a new manager
     @PostMapping("/addManager")
     public String addManager(ManagerDTO managerDTO){
-        managerConverter.FromManagerToManagerDto(managerService.saveManager(managerConverter.FromManagerDtoToManager((managerDTO))));
+        managerConverter.FromManagerToManagerDto(managerService.saveManager(managerConverter.FromManagerDtoToManager(managerDTO)));
         return "The manager created successfully";
 
     }
