@@ -1,18 +1,13 @@
 package ma.atos.agencymanagement.service;
 
 import ma.atos.agencymanagement.model.Habilitation;
-import ma.atos.agencymanagement.model.Manager;
 import ma.atos.agencymanagement.model.Role;
 import ma.atos.agencymanagement.repository.HabilitationRepository;
 import ma.atos.agencymanagement.repository.RoleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 @Service
 public class RoleService {
@@ -36,11 +31,13 @@ public class RoleService {
         return savedRole;
 
     }
+
     public void deletRole(Long id) {
         roleRepository.deleteById(id);
     }
-    public Role assignHabilitation(Long roleId, Long habilitationId){
-       Role role = roleRepository.findById(roleId).get();
+
+    public Role assignHabilitation(Long roleId, Long habilitationId) {
+        Role role = roleRepository.findById(roleId).get();
         Habilitation habilitation = repository.findById(habilitationId).get();
         role.getHabilitation().add(habilitation);
         return roleRepository.save(role);
