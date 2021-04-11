@@ -1,9 +1,9 @@
 package ma.atos.agencymanagement.controller;
 
+import ma.atos.agencymanagement.converter.ManagerConverter;
+import ma.atos.agencymanagement.dto.ManagerDTO;
 import ma.atos.agencymanagement.model.Manager;
-import ma.atos.agencymanagement.model.Role;
 import ma.atos.agencymanagement.service.ManagerService;
-import ma.atos.agencymanagement.service.RoleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -16,26 +16,28 @@ public class ManagerController {
     @Autowired
     private ManagerService managerService;
 
+    @Autowired
+    private ManagerConverter managerConverter;
+
     //UPDATE MANAGER
     @PutMapping("/update")
-    public String update(@RequestBody Manager manager){
-        System.out.println("Manager to modify "+manager.getFirstName());
-        managerService.updateManager(manager);
+    public String update(@RequestBody ManagerDTO managerDTO){
+        managerConverter.FromManagerToManagerDto(managerService.updateManager(managerConverter.FromManagerDtoToManager(managerDTO)));
         return "Manager updated successfully";
     }
 
     //ADD a new manager
     @PostMapping("/addManager")
-    public String addManager(Manager manager){
-        managerService.saveManager(manager);
+    public String addManager(ManagerDTO managerDTO){
+        managerConverter.FromManagerToManagerDto(managerService.saveManager(managerConverter.FromManagerDtoToManager((managerDTO))));
         return "The manager created successfully";
 
     }
 
     //get the list of managers
     @GetMapping("/managers")
-    public List<Manager> getManagers(){
-        return managerService.getManagers();
+    public List<ManagerDTO> getManagers(){
+        return managerConverter.FromListManagersToListManagersDto(managerService.getManagers());
     }
 
     //Delete managers by id
