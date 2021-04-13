@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: ma.atos.agencymanagement.service.RoleServiceTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 0.21 s <<< FAILURE! - in ma.atos.agencymanagement.service.RoleServiceTest
+saveRole  Time elapsed: 0 s  <<< ERROR!
+java.lang.NoSuchMethodError: org.mockito.MockitoAnnotations.openMocks(Ljava/lang/Object;)Ljava/lang/AutoCloseable;
+
+deletRole  Time elapsed: 0 s  <<< ERROR!
+java.lang.NoSuchMethodError: org.mockito.MockitoAnnotations.openMocks(Ljava/lang/Object;)Ljava/lang/AutoCloseable;
+
+getById  Time elapsed: 0 s  <<< ERROR!
+java.lang.NoSuchMethodError: org.mockito.MockitoAnnotations.openMocks(Ljava/lang/Object;)Ljava/lang/AutoCloseable;
+
+getRoles  Time elapsed: 0 s  <<< ERROR!
+java.lang.NoSuchMethodError: org.mockito.MockitoAnnotations.openMocks(Ljava/lang/Object;)Ljava/lang/AutoCloseable;
+

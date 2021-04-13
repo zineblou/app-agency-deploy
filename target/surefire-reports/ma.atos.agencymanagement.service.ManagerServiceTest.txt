@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: ma.atos.agencymanagement.service.ManagerServiceTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.171 s <<< FAILURE! - in ma.atos.agencymanagement.service.ManagerServiceTest
+getManagers  Time elapsed: 0 s  <<< ERROR!
+java.lang.NoSuchMethodError: org.mockito.MockitoAnnotations.openMocks(Ljava/lang/Object;)Ljava/lang/AutoCloseable;
+
+deleteManager  Time elapsed: 0 s  <<< ERROR!
+java.lang.NoSuchMethodError: org.mockito.MockitoAnnotations.openMocks(Ljava/lang/Object;)Ljava/lang/AutoCloseable;
+
+saveManager  Time elapsed: 0 s  <<< ERROR!
+java.lang.NoSuchMethodError: org.mockito.MockitoAnnotations.openMocks(Ljava/lang/Object;)Ljava/lang/AutoCloseable;
+

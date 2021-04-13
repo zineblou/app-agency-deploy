@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: ma.atos.agencymanagement.service.HabilitationServiceTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 0.38 s <<< FAILURE! - in ma.atos.agencymanagement.service.HabilitationServiceTest
+getHabilitations  Time elapsed: 0 s  <<< ERROR!
+java.lang.NoSuchMethodError: org.mockito.MockitoAnnotations.openMocks(Ljava/lang/Object;)Ljava/lang/AutoCloseable;
+
+saveHabilitation  Time elapsed: 0 s  <<< ERROR!
+java.lang.NoSuchMethodError: org.mockito.MockitoAnnotations.openMocks(Ljava/lang/Object;)Ljava/lang/AutoCloseable;
+
+deleteHabilitation  Time elapsed: 0 s  <<< ERROR!
+java.lang.NoSuchMethodError: org.mockito.MockitoAnnotations.openMocks(Ljava/lang/Object;)Ljava/lang/AutoCloseable;
+
+getHabilitationById  Time elapsed: 0 s  <<< ERROR!
+java.lang.NoSuchMethodError: org.mockito.MockitoAnnotations.openMocks(Ljava/lang/Object;)Ljava/lang/AutoCloseable;
+

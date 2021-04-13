@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: ma.atos.agencymanagement.service.AgencyServiceTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 0.424 s <<< FAILURE! - in ma.atos.agencymanagement.service.AgencyServiceTest
+deleteAgency  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.NoSuchMethodError: org.mockito.MockitoAnnotations.openMocks(Ljava/lang/Object;)Ljava/lang/AutoCloseable;
+
+addAgency  Time elapsed: 0 s  <<< ERROR!
+java.lang.NoSuchMethodError: org.mockito.MockitoAnnotations.openMocks(Ljava/lang/Object;)Ljava/lang/AutoCloseable;
+
+getAgency  Time elapsed: 0 s  <<< ERROR!
+java.lang.NoSuchMethodError: org.mockito.MockitoAnnotations.openMocks(Ljava/lang/Object;)Ljava/lang/AutoCloseable;
+
+getAllAgencies  Time elapsed: 0 s  <<< ERROR!
+java.lang.NoSuchMethodError: org.mockito.MockitoAnnotations.openMocks(Ljava/lang/Object;)Ljava/lang/AutoCloseable;
+
