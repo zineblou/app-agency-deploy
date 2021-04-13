@@ -37,4 +37,11 @@ public class Agency {
         this.swiftCode = swiftCode;
         this.date = date;
     }
+
+    public Agency(long placeCode, String name, String bankCode, String swiftCode) {
+        this.placeCode = placeCode;
+        this.name = name;
+        this.bankCode = bankCode;
+        this.swiftCode = swiftCode;
+    }
 }

@@ -36,9 +36,10 @@ public class AgencyService {
         return agencyRepository.findById(id);
     }
 
-    public void addAgency(Agency agency) {
+    public Agency addAgency(Agency agency) {
 
         agencyRepository.save(agency);
+        return agency;
     }
 
     public Agency updateAgency(Agency agency) {
@@ -68,13 +69,9 @@ public class AgencyService {
     public void mergeAgencies(List<Agency> agencyList) {
 
         AgencyMerge agencyMerge = new AgencyMerge();
-        agencyMerge.setPlaceCode(33L);
         agencyMerge.setAgencyList(agencyList);
         agencyMergeRepository.save(agencyMerge);
-
-        for (Agency temp : agencyList) {
-            disableAgency(temp.getPlaceCode());
-        }
+        agencyList.stream().forEach(agency -> disableAgency(agency.getPlaceCode()));
 
 
     }
