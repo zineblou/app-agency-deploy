@@ -1,28 +1,21 @@
 package ma.atos.agencymanagement.dto;
 
 import lombok.Data;
-import ma.atos.agencymanagement.model.Modification;
 
+import javax.validation.constraints.NotNull;
 import java.util.Date;
 
 
-
-
-
 @Data
-public class HabilitationDTO extends Modification {
+public class HabilitationDTO extends ModificationDTO {
 
 
-
-    //le libelé
+    @NotNull(message = "Name is required")
     private String name;
+    @NotNull(message = "startDate is required")
     private Date startDate;
+    @NotNull(message = "endDate is required")
     private Date endDate;
-
-
-
-
-
 
 
 }
