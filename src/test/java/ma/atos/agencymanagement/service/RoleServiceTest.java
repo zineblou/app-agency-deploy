@@ -41,7 +41,7 @@ class RoleServiceTest {
 
 
     @Test
-    public void getById() {
+    void getById() {
 
         when(roleRepository.findById(1L)).thenReturn(Optional.of(roleTest));
         Optional<Role> returnedROles = Optional.ofNullable(roleService.getById(1L));
@@ -69,7 +69,7 @@ class RoleServiceTest {
         /// Setup our mock repository
         Role roleTest3 = new Role(1L, "Writing2", "A2344");
 
-//
+
         when(roleRepository.save(roleTest3)).thenReturn(roleTest3);
 
         //Then

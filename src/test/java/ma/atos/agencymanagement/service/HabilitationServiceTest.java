@@ -58,7 +58,7 @@ class HabilitationServiceTest {
 
 
     @Test
-    public void getHabilitationById() {
+     void getHabilitationById() {
 
         when(habilitationRepository.findById(1L)).thenReturn(Optional.of(habilitationTest));
         Optional<Habilitation> returnedHabilitations = Optional.ofNullable(habilitationService.getHabilitationById(1L));
