@@ -1,18 +1,13 @@
 package ma.atos.agencymanagement.dto;
 
 
-
 import lombok.Data;
-
-
-
-import java.io.Serializable;
 
 import java.util.List;
 
 
 @Data
-public class AgencyDTO implements Serializable {
+public class AgencyDTO extends ModificationDTO{
 
     private Long placeCode;
     private String name;

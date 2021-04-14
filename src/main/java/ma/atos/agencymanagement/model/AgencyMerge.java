@@ -4,7 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.*;
+import javax.persistence.OneToMany;
 import java.util.ArrayList;
 import java.util.List;
 @Data
@@ -12,5 +12,5 @@ import java.util.List;
 @AllArgsConstructor
 public class AgencyMerge extends Agency{
     @OneToMany
-    private List<Agency> agencyList = new ArrayList<Agency>();
+    private List<Agency> agencyList = new ArrayList<>();
 }

@@ -29,12 +29,12 @@ public class Role extends Modification {
 
     @ManyToMany
     @Fetch(value = FetchMode.SUBSELECT)
-    private List<Manager> managers = new ArrayList<Manager>();
+    private List<Manager> managers = new ArrayList<>();
     @LazyCollection(LazyCollectionOption.FALSE)
 
     @ManyToMany
     @Fetch(value = FetchMode.SUBSELECT)
-    private List<Habilitation> habilitation = new ArrayList<Habilitation>();
+    private List<Habilitation> habilitation = new ArrayList<>();
 
     public Role(Long id, String name, String code) {
         this.id = id;

@@ -1,6 +1,5 @@
 package ma.atos.agencymanagement.service;
 
-import ma.atos.agencymanagement.model.Habilitation;
 import ma.atos.agencymanagement.model.Manager;
 import ma.atos.agencymanagement.repository.ManagerRepository;
 import org.aspectj.lang.annotation.Before;
@@ -17,11 +16,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
-import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
-import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.*;
 
 

@@ -14,29 +14,29 @@ public class ManagerConverter {
 
 
     //From Manager entity to Manager dto
-    public ManagerDTO FromManagerToManagerDto(Manager manager){
+    public ManagerDTO fromManagerToManagerDto(Manager manager){
         ModelMapper mapper =new ModelMapper();
         return mapper.map(manager, ManagerDTO.class);
     }
 
 
     //From Manager dto to Manager entity
-    public Manager FromManagerDtoToManager(ManagerDTO managerDTO){
+    public Manager fromManagerDtoToManager(ManagerDTO managerDTO){
         ModelMapper mapper =new ModelMapper();
         return mapper.map(managerDTO, Manager.class);
     }
 
     //From Manager entity list to Manager dto list
-    public List<ManagerDTO> FromListManagersToListManagersDto(List<Manager> managers){
-        ModelMapper mapper =new ModelMapper();
-        return managers.stream().map(this::FromManagerToManagerDto).collect(Collectors.toList());
+    public List<ManagerDTO> fromListManagersToListManagersDto(List<Manager> managers){
+
+        return managers.stream().map(this::fromManagerToManagerDto).collect(Collectors.toList());
     }
 
 
     //From Manager dto list to Manager list
-    public List<Manager> FromListManagersDtoToListManagers(List<ManagerDTO> managersDto){
-        ModelMapper mapper =new ModelMapper();
-        return managersDto.stream().map(this::FromManagerDtoToManager).collect(Collectors.toList());
+    public List<Manager> fromListManagersDtoToListManagers(List<ManagerDTO> managersDto){
+
+        return managersDto.stream().map(this::fromManagerDtoToManager).collect(Collectors.toList());
 
     }
 }

@@ -1,12 +1,9 @@
 package ma.atos.agencymanagement.dto;
 
 
-
 import lombok.Data;
-
 import ma.atos.agencymanagement.model.Agency;
 import ma.atos.agencymanagement.model.Modification;
-
 
 import java.util.Date;
 

@@ -1,16 +1,15 @@
 package ma.atos.agencymanagement.service;
 
 
-
 import ma.atos.agencymanagement.model.Role;
 import ma.atos.agencymanagement.repository.RoleRepository;
-
 import org.aspectj.lang.annotation.Before;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
+import org.mockito.Mockito;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
@@ -19,10 +18,8 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
-import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
-import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.*;
 
 @RunWith(SpringRunner.class)
@@ -90,7 +87,7 @@ class RoleServiceTest {
     void deletRole() {
         roleService.deletRole(1L);
 
-        verify(roleRepository, times(1)).deleteById(1L);
+        Mockito.verify(roleRepository, times(1)).deleteById(1L);
     }
 
 

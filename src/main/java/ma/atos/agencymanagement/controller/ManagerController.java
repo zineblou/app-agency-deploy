@@ -3,8 +3,6 @@ package ma.atos.agencymanagement.controller;
 import io.swagger.annotations.*;
 import ma.atos.agencymanagement.converter.ManagerConverter;
 import ma.atos.agencymanagement.dto.ManagerDTO;
-
-import ma.atos.agencymanagement.model.Manager;
 import ma.atos.agencymanagement.service.ManagerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -29,7 +27,7 @@ public class ManagerController {
     //UPDATE MANAGER
     @PutMapping("/update")
     public String update(@RequestBody ManagerDTO managerDTO){
-        managerConverter.FromManagerToManagerDto(managerService.updateManager(managerConverter.FromManagerDtoToManager(managerDTO)));
+        managerConverter.fromManagerToManagerDto(managerService.updateManager(managerConverter.fromManagerDtoToManager(managerDTO)));
         return "Manager updated successfully";
     }
 
@@ -40,7 +38,7 @@ public class ManagerController {
     //ADD a new manager
     @PostMapping("/addManager")
     public String addManager(ManagerDTO managerDTO){
-        managerConverter.FromManagerToManagerDto(managerService.saveManager(managerConverter.FromManagerDtoToManager(managerDTO)));
+        managerConverter.fromManagerToManagerDto(managerService.saveManager(managerConverter.fromManagerDtoToManager(managerDTO)));
         return "The manager created successfully";
 
     }
@@ -52,7 +50,7 @@ public class ManagerController {
     //get the list of managers
     @GetMapping("/managers")
     public List<ManagerDTO> getManagers(){
-        return managerConverter.FromListManagersToListManagersDto(managerService.getManagers());
+        return managerConverter.fromListManagersToListManagersDto(managerService.getManagers());
     }
 
     @ApiOperation(value = "supprimer Manager", notes = "", nickname = "supprimerManager")
@@ -71,7 +69,7 @@ public class ManagerController {
     })
    //Assing a role to the manager
     @PutMapping("/assignRole")
-    public Manager assignRole(@ApiParam(value = "Role à assigner", required = true)@RequestParam("idRole") Long roleId, @ApiParam(value = "Manager à assigner", required = true)@RequestParam("idManager") Long idManager){
+    public String assignRole(@ApiParam(value = "Role à assigner", required = true)@RequestParam("idRole") Long roleId, @ApiParam(value = "Manager à assigner", required = true)@RequestParam("idManager") Long idManager){
        return managerService.assignRole(roleId,idManager);
     }
 
@@ -81,7 +79,7 @@ public class ManagerController {
     })
     //Assign a manager
     @PutMapping("/assignManager")
-    public Manager assignManager(@ApiParam(value = "Manager à assigner", required = true)@RequestParam("id1") Long id1, @ApiParam(value = "Gestionnaire", required = true)@RequestParam("id2") Long id2){
+    public String assignManager(@ApiParam(value = "Manager à assigner", required = true)@RequestParam("id1") Long id1, @ApiParam(value = "Gestionnaire", required = true)@RequestParam("id2") Long id2){
         return managerService.assignManager(id1,id2);
     }
 
@@ -91,7 +89,7 @@ public class ManagerController {
     })
     //Assign an agency
     @PutMapping("/assignAgency")
-    public Manager assignAgency(@ApiParam(value = "Manager à assigner", required = true)@RequestParam("idManager") Long idManager, @ApiParam(value = "Agence", required = true)@RequestParam("idAgency") Long idAgency){
+    public String assignAgency(@ApiParam(value = "Manager à assigner", required = true)@RequestParam("idManager") Long idManager, @ApiParam(value = "Agence", required = true)@RequestParam("idAgency") Long idAgency){
         return managerService.assignAgency(idManager,idAgency);
     }
 

@@ -22,7 +22,7 @@ public class ManagerService {
     private RoleRepository roleRepository;
 
     @Autowired
-    private AgencyRepository agencyRepository;
+    private AgencyRepository<Agency> agencyRepository;
 
     public Manager saveManager(Manager manager) {
         return managerRepository.save(manager);
@@ -52,24 +52,37 @@ public class ManagerService {
 
     }
 
-    public Manager assignRole(Long roleId, Long idManager) {
-        Manager manager = managerRepository.findById(idManager).get();
-        Role role = roleRepository.findById(roleId).get();
-        manager.getRoles().add(role);
-        return managerRepository.save(manager);
+    public String assignRole(Long roleId, Long idManager) {
+        Manager manager = managerRepository.findById(idManager).orElse(null);
+        Role role = roleRepository.findById(roleId).orElse(null);
+        if(manager!=null && role!=null) {
+            manager.getRoles().add(role);
+            managerRepository.save(manager);
+            return "assigne role success";
+        }
+        return "assigne role error";
+
     }
 
-    public Manager assignManager(Long manager1, Long manager2) {
-        Manager assigned = managerRepository.findById(manager1).get();
-        Manager toAssign = managerRepository.findById(manager2).get();
-        assigned.setManager(toAssign);
-        return managerRepository.save(assigned);
+    public String assignManager(Long manager1, Long manager2) {
+        Manager assigned = managerRepository.findById(manager1).orElse(null);
+        Manager toAssign = managerRepository.findById(manager2).orElse(null);
+        if(assigned!=null && toAssign!=null) {
+            assigned.setManagerSup(toAssign);
+            managerRepository.save(assigned);
+            return "assigne manager success";
+        }
+        return "assigne manager error";
+
     }
 
-    public Manager assignAgency(Long managerId, Long agencyId) {
-        Manager manager = managerRepository.findById(managerId).get();
-        Agency agency = (Agency) agencyRepository.findById(agencyId).get();
-        manager.setAgency(agency);
-        return managerRepository.save(manager);
+    public String assignAgency(Long managerId, Long agencyId) {
+        Manager manager = managerRepository.findById(managerId).orElse(null);
+        Agency agency =  agencyRepository.findById(agencyId).orElse(null);
+        if(manager!=null && agency!=null) {
+            manager.setAgency(agency);
+            return "assigne agency success";
+        }
+        return "assigne agency error";
     }
 }

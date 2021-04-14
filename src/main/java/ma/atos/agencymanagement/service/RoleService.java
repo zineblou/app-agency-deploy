@@ -24,11 +24,10 @@ public class RoleService {
         return roleRepository.findAll();
     }
 
-//    public Role finByRole (Role role){return roleRepository.findById}
+
 
     public Role saveRole(Role role) {
-        Role savedRole = roleRepository.save(role);
-        return savedRole;
+        return roleRepository.save(role);
 
     }
 
@@ -36,20 +35,29 @@ public class RoleService {
         roleRepository.deleteById(id);
     }
 
-    public Role assignHabilitation(Long roleId, Long habilitationId) {
-        Role role = roleRepository.findById(roleId).get();
-        Habilitation habilitation = repository.findById(habilitationId).get();
-        role.getHabilitation().add(habilitation);
-        return roleRepository.save(role);
+    public String assignHabilitation(Long roleId, Long habilitationId) {
+        Role role = roleRepository.findById(roleId).orElse(null);
+        Habilitation habilitation = repository.findById(habilitationId).orElse(null);
+        if(role!=null && habilitation !=null) {
+
+                role.getHabilitation().add(habilitation);
+                roleRepository.save(role);
+                return "assigne HABILITATION success";
+            }
+        return "assigne HABILITATION error";
     }
 
     public Role update(Role role) {
 
-        Role existingrole = roleRepository.findById(role.getId()).orElse(null);
-        existingrole.setName(role.getName());
-        existingrole.setCode(role.getCode());
-        existingrole.setId(role.getId());
-        return roleRepository.save(existingrole);
+        Role existingRole = roleRepository.findById(role.getId()).orElse(null);
+            if(existingRole == null){
+                existingRole = roleRepository.save(role);
+            }
+            existingRole.setName(role.getName());
+            existingRole.setCode(role.getCode());
+            existingRole.setId(role.getId());
+
+        return roleRepository.save(existingRole);
     }
 
 

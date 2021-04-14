@@ -1,9 +1,6 @@
 package ma.atos.agencymanagement.dto;
 
-import lombok.AllArgsConstructor;
-
 import lombok.Data;
-import lombok.NoArgsConstructor;
 import ma.atos.agencymanagement.model.Agency;
 
 import java.util.ArrayList;

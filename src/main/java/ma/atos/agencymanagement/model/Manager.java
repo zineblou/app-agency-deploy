@@ -1,6 +1,5 @@
 package ma.atos.agencymanagement.model;
 
-import com.sun.org.apache.xpath.internal.operations.Mod;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -26,9 +25,9 @@ public class Manager extends Modification {
     private String lastName;
     private Date integrationDate;
     @ManyToMany(fetch = FetchType.EAGER)
-    private List<Role> roles = new ArrayList<Role>();
+    private List<Role> roles = new ArrayList<>();
     @ManyToOne
-    private Manager manager;
+    private Manager managerSup;
     @ManyToOne
     private Agency agency;
 

@@ -1,6 +1,7 @@
 package ma.atos.agencymanagement.service;
 
 
+import ma.atos.agencymanagement.exception.AgencyNotFoundException;
 import ma.atos.agencymanagement.model.Agency;
 import ma.atos.agencymanagement.model.AgencyMerge;
 import ma.atos.agencymanagement.repository.AgencyRepository;
@@ -19,6 +20,7 @@ public class AgencyService {
 
     @Autowired
     private AgencyRepository<Agency> agencyRepository;
+
     private AgencyRepository<AgencyMerge> agencyMergeRepository;
 
 
@@ -60,7 +62,7 @@ public class AgencyService {
     }
 
     public Agency disableAgency(Long id) {
-        Agency agency = agencyRepository.findById(id).get();
+        Agency agency = agencyRepository.findById(id).orElseThrow(()-> new AgencyNotFoundException(id));
         agency.setDisable(true);
         return agencyRepository.save(agency);
 

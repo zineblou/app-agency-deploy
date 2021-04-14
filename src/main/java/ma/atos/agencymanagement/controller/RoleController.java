@@ -28,7 +28,7 @@ public class RoleController {
     //Get the list of roles
     @GetMapping(value = "/listroles")
     public List<RoleDTO> getRoles() {
-        return roleConverter.FromListRolesToListRolesDto(roleService.getRoles());
+        return roleConverter.fromListRolesToListRolesDto(roleService.getRoles());
     }
 
     @ApiOperation(value = "Ajouter un Role", notes = "", nickname = "AjouterRole")
@@ -40,7 +40,7 @@ public class RoleController {
     @PostMapping(value = "/addrole")
     public RoleDTO addRole(RoleDTO roleDTO) {
 
-        return roleConverter.FromRoleToRoleDto(roleService.saveRole(roleConverter.FromRoleDtoToRole(roleDTO)));
+        return roleConverter.fromRoleToRoleDto(roleService.saveRole(roleConverter.fromRoleDtoToRole(roleDTO)));
     }
 
     @ApiOperation(value = "Modifier un Role", notes = "", nickname = "modifierRole")
@@ -51,7 +51,7 @@ public class RoleController {
     //Update the roles
     @PutMapping(value = "/update")
     public RoleDTO updateRole(@RequestBody RoleDTO roleDTO) {
-        return roleConverter.FromRoleToRoleDto(roleService.update(roleConverter.FromRoleDtoToRole(roleDTO)));
+        return roleConverter.fromRoleToRoleDto(roleService.update(roleConverter.fromRoleDtoToRole(roleDTO)));
     }
 
     @ApiOperation(value = "Retourner un Role par son id", notes = "", nickname = "findById")
@@ -82,7 +82,7 @@ public class RoleController {
     })
     //Asign Habilitation to the role
     @PutMapping("/assignHabilition")
-    public Role assignHabilitation(@ApiParam(value = "Role Id", required = true)@RequestParam("roleId") Long roleId, @ApiParam(value = "Habilitation Id", required = true)@RequestParam("habilitationId") Long habilitationId) {
+    public String assignHabilitation(@ApiParam(value = "Role Id", required = true)@RequestParam("roleId") Long roleId, @ApiParam(value = "Habilitation Id", required = true)@RequestParam("habilitationId") Long habilitationId) {
         return roleService.assignHabilitation(roleId, habilitationId);
     }
 

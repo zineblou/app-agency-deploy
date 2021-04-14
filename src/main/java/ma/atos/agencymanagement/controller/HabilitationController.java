@@ -4,7 +4,6 @@ package ma.atos.agencymanagement.controller;
 import io.swagger.annotations.*;
 import ma.atos.agencymanagement.converter.HabilitationConverter;
 import ma.atos.agencymanagement.dto.HabilitationDTO;
-import ma.atos.agencymanagement.dto.RoleDTO;
 import ma.atos.agencymanagement.model.Habilitation;
 import ma.atos.agencymanagement.service.HabilitationService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,8 +29,8 @@ class HabilitationController {
     @PostMapping("/addHabilitation")
     public HabilitationDTO addHabilitation(@RequestBody HabilitationDTO habilitationDTO) {
         return (HabilitationDTO) habilitationConverter.
-                FromListHabilitionsToListHabilitationDto(habilitationService.saveHabilitation(habilitationConverter.
-                        FromListHabilitationdDtoToListHabilitations((List<HabilitationDTO>) habilitationDTO)));
+                fromListHabilitionsToListHabilitationDto(habilitationService.saveHabilitation(habilitationConverter.
+                        fromListHabilitationdDtoToListHabilitations((List<HabilitationDTO>) habilitationDTO)));
     }
 
     @ApiOperation(value = "Retourner la liste des habilitations", notes = "", nickname = "findAll")
@@ -43,7 +42,7 @@ class HabilitationController {
     @GetMapping("/habilitations")
     public List<HabilitationDTO> getHabilitations() {
         return habilitationConverter.
-                FromListHabilitionsToListHabilitationDto(habilitationService.getHabilitations());
+                fromListHabilitionsToListHabilitationDto(habilitationService.getHabilitations());
 
 
     }
@@ -57,8 +56,8 @@ class HabilitationController {
     @PostMapping("/addHabilitations")
     public List<HabilitationDTO> addHabilitation(@RequestBody List<HabilitationDTO> habilitationsDTO) {
         return habilitationConverter
-                .FromListHabilitionsToListHabilitationDto(habilitationService
-                        .saveHabilitation(habilitationConverter.FromListHabilitationdDtoToListHabilitations(habilitationsDTO)));
+                .fromListHabilitionsToListHabilitationDto(habilitationService
+                        .saveHabilitation(habilitationConverter.fromListHabilitationdDtoToListHabilitations(habilitationsDTO)));
     }
 
     @ApiOperation(value = "Retourner une habilitation par son id", notes = "", nickname = "findById")
@@ -70,7 +69,7 @@ class HabilitationController {
     @GetMapping("/HabilitationById/{id}")
     public HabilitationDTO getHabilitationById(@ApiParam(value = "Habilitation à trouver", required = true)@PathVariable Long id) {
         return (HabilitationDTO) habilitationConverter.
-                FromListHabilitionsToListHabilitationDto((List<Habilitation>) habilitationService
+                fromListHabilitionsToListHabilitationDto((List<Habilitation>) habilitationService
                         .getHabilitationById(id));
     }
 
@@ -83,9 +82,9 @@ class HabilitationController {
     @PutMapping("/update")
     public HabilitationDTO updateHabilitation(@RequestBody HabilitationDTO habilitationDTO) {
         return (HabilitationDTO) habilitationConverter.
-                FromListHabilitionsToListHabilitationDto(habilitationService.
+                fromListHabilitionsToListHabilitationDto(habilitationService.
                         saveHabilitation(habilitationConverter
-                                .FromListHabilitationdDtoToListHabilitations((List<HabilitationDTO>) habilitationDTO)));
+                                .fromListHabilitationdDtoToListHabilitations((List<HabilitationDTO>) habilitationDTO)));
     }
 
     @ApiOperation(value = "Supprimer une Habilitation", notes = "", nickname = "DeleteHabilitationById")
