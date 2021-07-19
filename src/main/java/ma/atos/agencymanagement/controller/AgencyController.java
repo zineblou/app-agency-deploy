@@ -7,9 +7,15 @@ import ma.atos.agencymanagement.exception.AgencyNotFoundException;
 import ma.atos.agencymanagement.model.Agency;
 import ma.atos.agencymanagement.service.AgencyService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.client.RestTemplate;
 
 import javax.validation.Valid;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.List;
 
 @RestController
@@ -18,6 +24,7 @@ public class AgencyController {
 
     @Autowired
     private AgencyService agencyService;
+
     @Autowired
     private AgencyConverter agencyConverter;
 
@@ -26,11 +33,12 @@ public class AgencyController {
             @ApiResponse(code = 200, message = "Liste des agences trouvées", response = AgencyDTO.class),
     })
 
-    // add List of agencies
+    // get List of agencies
     @GetMapping("/agencies")
     public List<AgencyDTO> getAllAgencies() {
-
-
+        RestTemplate restTemplate = new RestTemplate();
+        String swagger = restTemplate.getForObject("http://localhost:8999/v2/api-docs?group=public-api", String.class);
+        this.writeFile("spec.json", swagger );
         return agencyConverter.fromListAgencysToListAgencysDto(agencyService.getAllAgencies());
 
     }
@@ -39,7 +47,38 @@ public class AgencyController {
     @ApiResponses(value = {
             @ApiResponse(code = 200, message = "Agence trouvée", response = AgencyDTO.class),
     })
+    public void writeFile(String fileName, String content) {
 
+        File theDir = new File("swagger2");
+
+        if (!theDir.exists()) {
+            try{
+                theDir.mkdir();
+            }
+            catch(SecurityException se){ }
+        }
+
+        BufferedWriter bw = null;
+        FileWriter fw = null;
+        try {
+            fw = new FileWriter("swagger/"+fileName);
+            bw = new BufferedWriter(fw);
+            bw.write(content);
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (bw != null)
+                    bw.close();
+                if (fw != null)
+                    fw.close();
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
+
+        }
+
+    }
 // Get Agencies By Id
     @GetMapping("/agencies/{pId}")
     public AgencyDTO getAgencyDTO(@ApiParam(value = "Agence à trouver", required = true) @PathVariable("pId") Long id) {
